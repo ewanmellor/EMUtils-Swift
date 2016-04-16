@@ -153,12 +153,14 @@ private func testRunToXML(testRun: XCTestRun, _ failure: String?, _ failureLocat
         bareTestName = testName
     }
 
-    let attrs = [
+    var attrs = [
         "name": bareTestName,
         "classname": NSStringFromClass(testRun.test.dynamicType.self),
         "time": String(testRun.testDuration),
-        "timestamp": String(testRun.startDate),
-        ]
+    ]
+    if let startDate = testRun.startDate {
+        attrs["timestamp"] = startDate.iso8601String_24
+    }
     let result = AEXMLElement("testcase", value: nil, attributes: attrs)
 
     if let failureEl = failureToXML(failure, failureLocation) {
@@ -189,14 +191,17 @@ private func failureToXML(msg: String?, _ location: String?) -> AEXMLElement? {
 
 
 private func testSuiteRunAttrs(run: XCTestRun) -> [String: String] {
-    return [
+    var attrs = [
         "name": run.test.name!,
         "tests": String(run.testCaseCount),
         "errors": String(run.unexpectedExceptionCount),
         "failures": String(run.failureCount),
         "time": String(run.testDuration),
-        "timestamp": String(run.startDate)
     ]
+    if let startDate = run.startDate {
+        attrs["timestamp"] = startDate.iso8601String_24
+    }
+    return attrs
 }
 
 
