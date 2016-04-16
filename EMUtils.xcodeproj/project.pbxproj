@@ -11,6 +11,8 @@
 		407D19751CC2322400C102D5 /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
 		407D19761CC23C8000C102D5 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
 		407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D197A1CC23CE900C102D5 /* EnumerateTests.swift */; };
+		407D197D1CC2B72900C102D5 /* EMUtilsTestBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */; };
+		407D19811CC2B78C00C102D5 /* EMTestCaseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19801CC2B78C00C102D5 /* EMTestCaseBase.swift */; };
 		40BF49871CC1C77900BF6D82 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
 		40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49981CC1C7F100BF6D82 /* Reflection.swift */; };
 		40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */; };
@@ -89,6 +91,13 @@
 			remoteGlobalIDString = 40BF497B1CC1C77800BF6D82;
 			remoteInfo = EMUtils;
 		};
+		407D197E1CC2B73200C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40BF49731CC1C77800BF6D82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40BF49BE1CC1CE3900BF6D82;
+			remoteInfo = EMUtilsTestBase;
+		};
 		40BF49881CC1C77900BF6D82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40BF49731CC1C77800BF6D82 /* Project object */;
@@ -103,6 +112,7 @@
 		407D19741CC2322400C102D5 /* Enumerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerate.swift; sourceTree = "<group>"; };
 		407D19791CC23CE900C102D5 /* EMUtilsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtilsTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		407D197A1CC23CE900C102D5 /* EnumerateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumerateTests.swift; sourceTree = "<group>"; };
+		407D19801CC2B78C00C102D5 /* EMTestCaseBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMTestCaseBase.swift; sourceTree = "<group>"; };
 		40BF497C1CC1C77800BF6D82 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BF49811CC1C77800BF6D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40BF49871CC1C77900BF6D82 /* EMUtils.framework in Frameworks */,
+				407D197D1CC2B72900C102D5 /* EMUtilsTestBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */,
+				407D19801CC2B78C00C102D5 /* EMTestCaseBase.swift */,
 				40BF49B81CC1CD1C00BF6D82 /* Supporting Files */,
 			);
 			path = EMUtilsTestBase;
@@ -302,6 +314,7 @@
 			);
 			dependencies = (
 				40BF49891CC1C77900BF6D82 /* PBXTargetDependency */,
+				407D197F1CC2B73200C102D5 /* PBXTargetDependency */,
 			);
 			name = EMUtilsTests;
 			productName = EMUtilsTests;
@@ -481,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407D19811CC2B78C00C102D5 /* EMTestCaseBase.swift in Sources */,
 				40BF49C71CC1D10C00BF6D82 /* EMJUnitTestObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +511,11 @@
 			isa = PBXTargetDependency;
 			target = 40BF497B1CC1C77800BF6D82 /* EMUtils */;
 			targetProxy = 407D19771CC23C8A00C102D5 /* PBXContainerItemProxy */;
+		};
+		407D197F1CC2B73200C102D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase */;
+			targetProxy = 407D197E1CC2B73200C102D5 /* PBXContainerItemProxy */;
 		};
 		40BF49891CC1C77900BF6D82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

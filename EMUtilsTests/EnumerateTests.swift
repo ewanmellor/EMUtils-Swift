@@ -7,10 +7,11 @@
 //
 
 import EMUtils
+import EMUtilsTestBase
 import XCTest
 
 
-class EnumerateTests: XCTestCase {
+class EnumerateTests: EMTestCaseBase {
 
     func testEnumerate() {
         let a1 = [1, 2, 3]

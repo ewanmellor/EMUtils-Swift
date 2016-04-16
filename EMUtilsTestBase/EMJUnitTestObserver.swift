@@ -15,6 +15,7 @@ import XCTest
  * An XCTestObserver that emits a test report in JUnit format.
  */
 @available(*, deprecated)
+@objc(EMJUnitTestObserver)
 public class EMJUnitTestObserver: XCTestObserver {
     private class RunInfo {
         private var failures: [String: String]?
