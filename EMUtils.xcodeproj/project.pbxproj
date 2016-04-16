@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		40BF49871CC1C77900BF6D82 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
 		40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49981CC1C7F100BF6D82 /* Reflection.swift */; };
+		40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */; };
+		40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A61CC1CA4400BF6D82 /* UIViewController+EMUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 		40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BF498D1CC1C77900BF6D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40BF49981CC1C7F100BF6D82 /* Reflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
+		40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+EMUtils.swift"; sourceTree = "<group>"; };
+		40BF49A61CC1CA4400BF6D82 /* UIViewController+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+EMUtils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 		40BF497E1CC1C77800BF6D82 /* EMUtils */ = {
 			isa = PBXGroup;
 			children = (
+				40BF49A11CC1C9E100BF6D82 /* UI* */,
 				40BF49981CC1C7F100BF6D82 /* Reflection.swift */,
 			);
 			path = EMUtils;
@@ -89,6 +94,15 @@
 				40BF49811CC1C77800BF6D82 /* Info.plist */,
 			);
 			path = EMUtils.framework;
+			sourceTree = "<group>";
+		};
+		40BF49A11CC1C9E100BF6D82 /* UI* */ = {
+			isa = PBXGroup;
+			children = (
+				40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */,
+				40BF49A61CC1CA4400BF6D82 /* UIViewController+EMUtils.swift */,
+			);
+			name = "UI*";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */,
+				40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */,
 				40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
