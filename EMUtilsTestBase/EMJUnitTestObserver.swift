@@ -72,13 +72,15 @@ public class EMJUnitTestObserver: XCTestObserver {
             return
         }
 
-        suites.append(testRun as! XCTestSuiteRun)
-        let runInfo = RunInfo()
-        runInfo.failures = suiteFailures
-        runInfo.failureLocations = suiteFailureLocations
-        runInfo.logs = suiteLogs
+        if testRun.testCaseCount > 0 {
+            suites.append(testRun as! XCTestSuiteRun)
+            let runInfo = RunInfo()
+            runInfo.failures = suiteFailures
+            runInfo.failureLocations = suiteFailureLocations
+            runInfo.logs = suiteLogs
+            suiteRunInfo.append(runInfo)
+        }
 
-        suiteRunInfo.append(runInfo)
         suiteFailures = nil
         suiteFailureLocations.removeAll()
         suiteLogs.removeAll()
