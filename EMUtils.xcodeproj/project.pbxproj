@@ -7,13 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		407D19731CC229D600C102D5 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407D19621CC229AE00C102D5 /* AEXML.framework */; };
+		407D19751CC2322400C102D5 /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
+		407D19761CC23C8000C102D5 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
+		407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D197A1CC23CE900C102D5 /* EnumerateTests.swift */; };
 		40BF49871CC1C77900BF6D82 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
 		40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49981CC1C7F100BF6D82 /* Reflection.swift */; };
 		40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */; };
 		40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A61CC1CA4400BF6D82 /* UIViewController+EMUtils.swift */; };
+		40BF49C71CC1D10C00BF6D82 /* EMJUnitTestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		407D19611CC229AE00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92791BDD47210011F36F;
+			remoteInfo = "AEXML iOS";
+		};
+		407D19631CC229AE00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92991BDD4CEF0011F36F;
+			remoteInfo = "AEXML iOS Tests";
+		};
+		407D19651CC229AE00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A928A1BDD49390011F36F;
+			remoteInfo = "AEXML OSX";
+		};
+		407D19671CC229AE00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92AB1BDD54F50011F36F;
+			remoteInfo = "AEXML OSX Tests";
+		};
+		407D19691CC229AE00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92BE1BDD5B300011F36F;
+			remoteInfo = "AEXML tvOS";
+		};
+		407D196B1CC229AE00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92CC1BDD5BB20011F36F;
+			remoteInfo = "AEXML tvOS Tests";
+		};
+		407D196D1CC229AE00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92DF1BDD5D330011F36F;
+			remoteInfo = "AEXML watchOS";
+		};
+		407D196F1CC229AE00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BFE78A919F0054100914487;
+			remoteInfo = AEXMLExample;
+		};
+		407D19711CC229C200C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4A92781BDD47210011F36F;
+			remoteInfo = "AEXML iOS";
+		};
+		407D19771CC23C8A00C102D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40BF49731CC1C77800BF6D82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40BF497B1CC1C77800BF6D82;
+			remoteInfo = EMUtils;
+		};
 		40BF49881CC1C77900BF6D82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40BF49731CC1C77800BF6D82 /* Project object */;
@@ -24,6 +99,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		407D19561CC229AE00C102D5 /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = ../AEXML/AEXML.xcodeproj; sourceTree = "<group>"; };
+		407D19741CC2322400C102D5 /* Enumerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerate.swift; sourceTree = "<group>"; };
+		407D19791CC23CE900C102D5 /* EMUtilsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtilsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		407D197A1CC23CE900C102D5 /* EnumerateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumerateTests.swift; sourceTree = "<group>"; };
 		40BF497C1CC1C77800BF6D82 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BF49811CC1C77800BF6D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +110,10 @@
 		40BF49981CC1C7F100BF6D82 /* Reflection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
 		40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+EMUtils.swift"; sourceTree = "<group>"; };
 		40BF49A61CC1CA4400BF6D82 /* UIViewController+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+EMUtils.swift"; sourceTree = "<group>"; };
+		40BF49B11CC1CB6500BF6D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMJUnitTestObserver.swift; sourceTree = "<group>"; };
+		40BF49B91CC1CD3500BF6D82 /* EMUtilsTestBase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtilsTestBase-Bridging-Header.h"; sourceTree = "<group>"; };
+		40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtilsTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,16 +132,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40BF49BB1CC1CE3900BF6D82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407D19731CC229D600C102D5 /* AEXML.framework in Frameworks */,
+				407D19761CC23C8000C102D5 /* EMUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		407D19571CC229AE00C102D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				407D19621CC229AE00C102D5 /* AEXML.framework */,
+				407D19641CC229AE00C102D5 /* AEXML iOS Tests.xctest */,
+				407D19661CC229AE00C102D5 /* AEXML.framework */,
+				407D19681CC229AE00C102D5 /* AEXML OSX Tests.xctest */,
+				407D196A1CC229AE00C102D5 /* AEXML.framework */,
+				407D196C1CC229AE00C102D5 /* AEXML tvOS Tests.xctest */,
+				407D196E1CC229AE00C102D5 /* AEXML.framework */,
+				407D19701CC229AE00C102D5 /* AEXMLExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		407D197C1CC23CFC00C102D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				407D19791CC23CE900C102D5 /* EMUtilsTests-Bridging-Header.h */,
+				40BF498D1CC1C77900BF6D82 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		40BF49721CC1C77800BF6D82 = {
 			isa = PBXGroup;
 			children = (
 				40BF497E1CC1C77800BF6D82 /* EMUtils */,
 				40BF498A1CC1C77900BF6D82 /* EMUtilsTests */,
+				40BF49B51CC1CBFB00BF6D82 /* EMUtilsTestBase */,
 				40BF49A01CC1C87900BF6D82 /* EMUtils.framework */,
+				40BF49AE1CC1CB6500BF6D82 /* EMUtilsTestBase.framework */,
 				40BF497D1CC1C77800BF6D82 /* Products */,
+				407D19561CC229AE00C102D5 /* AEXML.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +186,7 @@
 			children = (
 				40BF497C1CC1C77800BF6D82 /* EMUtils.framework */,
 				40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */,
+				40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				40BF49A11CC1C9E100BF6D82 /* UI* */,
+				407D19741CC2322400C102D5 /* Enumerate.swift */,
 				40BF49981CC1C7F100BF6D82 /* Reflection.swift */,
 			);
 			path = EMUtils;
@@ -83,7 +204,8 @@
 		40BF498A1CC1C77900BF6D82 /* EMUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
-				40BF498D1CC1C77900BF6D82 /* Info.plist */,
+				407D197A1CC23CE900C102D5 /* EnumerateTests.swift */,
+				407D197C1CC23CFC00C102D5 /* Supporting Files */,
 			);
 			path = EMUtilsTests;
 			sourceTree = "<group>";
@@ -105,10 +227,42 @@
 			name = "UI*";
 			sourceTree = "<group>";
 		};
+		40BF49AE1CC1CB6500BF6D82 /* EMUtilsTestBase.framework */ = {
+			isa = PBXGroup;
+			children = (
+				40BF49B11CC1CB6500BF6D82 /* Info.plist */,
+			);
+			path = EMUtilsTestBase.framework;
+			sourceTree = "<group>";
+		};
+		40BF49B51CC1CBFB00BF6D82 /* EMUtilsTestBase */ = {
+			isa = PBXGroup;
+			children = (
+				40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */,
+				40BF49B81CC1CD1C00BF6D82 /* Supporting Files */,
+			);
+			path = EMUtilsTestBase;
+			sourceTree = "<group>";
+		};
+		40BF49B81CC1CD1C00BF6D82 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				40BF49B91CC1CD3500BF6D82 /* EMUtilsTestBase-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
 		40BF49791CC1C77800BF6D82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BF49BC1CC1CE3900BF6D82 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -154,6 +308,26 @@
 			productReference = 40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40BF49C41CC1CE3900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtilsTestBase" */;
+			buildPhases = (
+				40BF49BA1CC1CE3900BF6D82 /* Sources */,
+				40BF49BB1CC1CE3900BF6D82 /* Frameworks */,
+				40BF49BC1CC1CE3900BF6D82 /* Headers */,
+				40BF49BD1CC1CE3900BF6D82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				407D19721CC229C200C102D5 /* PBXTargetDependency */,
+				407D19781CC23C8A00C102D5 /* PBXTargetDependency */,
+			);
+			name = EMUtilsTestBase;
+			productName = EMUtilsTestBase;
+			productReference = 40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +344,9 @@
 					40BF49851CC1C77900BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
 					};
+					40BF49BE1CC1CE3900BF6D82 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 40BF49761CC1C77800BF6D82 /* Build configuration list for PBXProject "EMUtils" */;
@@ -182,13 +359,79 @@
 			mainGroup = 40BF49721CC1C77800BF6D82;
 			productRefGroup = 40BF497D1CC1C77800BF6D82 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 407D19571CC229AE00C102D5 /* Products */;
+					ProjectRef = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				40BF497B1CC1C77800BF6D82 /* EMUtils */,
+				40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase */,
 				40BF49851CC1C77900BF6D82 /* EMUtilsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		407D19621CC229AE00C102D5 /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 407D19611CC229AE00C102D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		407D19641CC229AE00C102D5 /* AEXML iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AEXML iOS Tests.xctest";
+			remoteRef = 407D19631CC229AE00C102D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		407D19661CC229AE00C102D5 /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 407D19651CC229AE00C102D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		407D19681CC229AE00C102D5 /* AEXML OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AEXML OSX Tests.xctest";
+			remoteRef = 407D19671CC229AE00C102D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		407D196A1CC229AE00C102D5 /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 407D19691CC229AE00C102D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		407D196C1CC229AE00C102D5 /* AEXML tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AEXML tvOS Tests.xctest";
+			remoteRef = 407D196B1CC229AE00C102D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		407D196E1CC229AE00C102D5 /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 407D196D1CC229AE00C102D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		407D19701CC229AE00C102D5 /* AEXMLExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AEXMLExample.app;
+			remoteRef = 407D196F1CC229AE00C102D5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40BF497A1CC1C77800BF6D82 /* Resources */ = {
@@ -205,6 +448,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40BF49BD1CC1CE3900BF6D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407D19751CC2322400C102D5 /* Enumerate.swift in Sources */,
 				40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */,
 				40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */,
 				40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */,
@@ -222,12 +473,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40BF49BA1CC1CE3900BF6D82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BF49C71CC1D10C00BF6D82 /* EMJUnitTestObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		407D19721CC229C200C102D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AEXML iOS";
+			targetProxy = 407D19711CC229C200C102D5 /* PBXContainerItemProxy */;
+		};
+		407D19781CC23C8A00C102D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40BF497B1CC1C77800BF6D82 /* EMUtils */;
+			targetProxy = 407D19771CC23C8A00C102D5 /* PBXContainerItemProxy */;
+		};
 		40BF49891CC1C77900BF6D82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 40BF497B1CC1C77800BF6D82 /* EMUtils */;
@@ -365,20 +635,63 @@
 		40BF49941CC1C77900BF6D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EMUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EMUtilsTests/EMUtilsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		40BF49951CC1C77900BF6D82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = EMUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EMUtilsTests/EMUtilsTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		40BF49C51CC1CE3900BF6D82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n",
+				);
+				INFOPLIST_FILE = EMUtilsTestBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		40BF49C61CC1CE3900BF6D82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n",
+				);
+				INFOPLIST_FILE = EMUtilsTestBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -408,6 +721,15 @@
 			buildConfigurations = (
 				40BF49941CC1C77900BF6D82 /* Debug */,
 				40BF49951CC1C77900BF6D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40BF49C41CC1CE3900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtilsTestBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BF49C51CC1CE3900BF6D82 /* Debug */,
+				40BF49C61CC1CE3900BF6D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
