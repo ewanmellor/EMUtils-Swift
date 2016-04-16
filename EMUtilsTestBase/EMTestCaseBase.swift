@@ -11,7 +11,7 @@ import XCTest
 
 
 public class EMTestCaseBase: XCTestCase {
-    func initialize() {
+    public override class func initialize() {
         if self !== EMTestCaseBase.self {
             return
         }
@@ -19,11 +19,8 @@ public class EMTestCaseBase: XCTestCase {
         let className = "EMJUnitTestObserver"
 
         let defaults = NSUserDefaults.standardUserDefaults()
-        var observers = defaults.stringForKey("XCTestObserverClass")
-        if observers == nil {
-            observers = "XCTestLog"
-        }
-        else if !observers!.containsString(className) {
+        var observers = defaults.stringForKey("XCTestObserverClass") ?? "XCTestLog"
+        if !observers.containsString(className) {
             observers = "\(observers),\(className)"
         }
 
@@ -31,7 +28,7 @@ public class EMTestCaseBase: XCTestCase {
     }
 
 
-    override public func setUp() {
+    public override func setUp() {
         super.setUp()
         continueAfterFailure = false
     }
