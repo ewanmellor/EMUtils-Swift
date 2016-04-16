@@ -1,6 +1,6 @@
-The MIT License (MIT)
+Unless otherwise noted, code in this repository is licensed as follows:
 
-Copyright (c) 2016 Ewan Mellor
+Copyright (c) Ewan Mellor.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+NSDate+ISO8601 is from https://github.com/tipbit/Tidbits,
+Copyright (c) Tipbit, Inc. and MIT licensed.
