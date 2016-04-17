@@ -10,6 +10,16 @@ import Foundation
 
 
 public extension NSDate {
+    convenience init?(iso8601 s: String) {
+        let t = NSDate.timeIntervalSinceReferenceDateFromIso8601(s)
+        if isnan(t) {
+            self.init() // Work around https://bugs.swift.org/browse/SR-704
+            return nil
+        }
+        self.init(timeIntervalSinceReferenceDate: t)
+    }
+
+
     public var iso8601String_16: String {
         return em_iso8601String_16()
     }

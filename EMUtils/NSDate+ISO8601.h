@@ -8,8 +8,15 @@
 
 @import Foundation;
 
+NS_ASSUME_NONNULL_BEGIN
+
 
 @interface NSDate (ISO8601)
+
+/**
+ * @return NAN if the datetime is unparseable.
+ */
++(NSTimeInterval)timeIntervalSinceReferenceDateFromIso8601:(NSString *)s;
 
 /**
  * @return A truncated UTC ISO 8601 date string with no seconds part: yyyy-MM-dd'T'HH:mm
@@ -37,3 +44,6 @@
 -(NSString *)em_iso8601String_24;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

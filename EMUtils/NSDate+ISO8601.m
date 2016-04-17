@@ -6,7 +6,10 @@
 //  Copyright © 2016 Ewan Mellor. All rights reserved.
 //
 
+#import "CBLParseDate.h"
 #import "NSDate+ISO8601.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 
 // The iso8601String_* implementations here are 10x faster than using NSDateFormatter.
@@ -20,6 +23,21 @@
 
 
 @implementation NSDate (ISO8601)
+
+
+static NSTimeInterval k1970ToReferenceDate;
+
+
++(void)load {
+    k1970ToReferenceDate = [[NSDate dateWithTimeIntervalSince1970:0.0] timeIntervalSinceReferenceDate];
+}
+
+
++(NSTimeInterval)timeIntervalSinceReferenceDateFromIso8601:(NSString *)s {
+    // Note that we round to 0.001 (i.e. msec) because CBLParseISO8601Date gives slightly different results compared
+    // with NSDateFormatter, and since we know that our dates are always msec precision we can truncate that away.
+    return s == nil ? NAN : round(1000.0 * (CBLParseISO8601Date(s.UTF8String) + k1970ToReferenceDate)) / 1000.0;
+}
 
 
 -(NSString *)em_iso8601String_16 {
@@ -93,3 +111,6 @@ static int gmtime_and_msec_of_interval(NSTimeInterval ts, struct tm * tm) {
 
 
 @end
+
+
+NS_ASSUME_NONNULL_END

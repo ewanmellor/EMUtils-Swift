@@ -16,6 +16,9 @@
 		407D19841CC2BBB100C102D5 /* NSDate+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19831CC2BBB100C102D5 /* NSDate+EMUtils.swift */; };
 		407D19871CC2BC2F00C102D5 /* NSDate+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D19851CC2BC2F00C102D5 /* NSDate+ISO8601.h */; };
 		407D19881CC2BC2F00C102D5 /* NSDate+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 407D19861CC2BC2F00C102D5 /* NSDate+ISO8601.m */; };
+		407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D198C1CC37E5200C102D5 /* CBLParseDate.c */; };
+		407D198F1CC37E5200C102D5 /* CBLParseDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198D1CC37E5200C102D5 /* CBLParseDate.h */; };
+		407D19911CC3806600C102D5 /* NSDate+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */; };
 		40BF49871CC1C77900BF6D82 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
 		40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49981CC1C7F100BF6D82 /* Reflection.swift */; };
 		40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */; };
@@ -120,6 +123,9 @@
 		407D19851CC2BC2F00C102D5 /* NSDate+ISO8601.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ISO8601.h"; sourceTree = "<group>"; };
 		407D19861CC2BC2F00C102D5 /* NSDate+ISO8601.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ISO8601.m"; sourceTree = "<group>"; };
 		407D198A1CC2BDA600C102D5 /* EMUtils-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtils-Bridging-Header.h"; sourceTree = "<group>"; };
+		407D198C1CC37E5200C102D5 /* CBLParseDate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CBLParseDate.c; sourceTree = "<group>"; };
+		407D198D1CC37E5200C102D5 /* CBLParseDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLParseDate.h; sourceTree = "<group>"; };
+		407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40BF497C1CC1C77800BF6D82 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BF49811CC1C77800BF6D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +210,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		407D198B1CC37E3500C102D5 /* CBL */ = {
+			isa = PBXGroup;
+			children = (
+				407D198C1CC37E5200C102D5 /* CBLParseDate.c */,
+				407D198D1CC37E5200C102D5 /* CBLParseDate.h */,
+			);
+			name = CBL;
+			path = ../CBL;
+			sourceTree = "<group>";
+		};
 		40BF49721CC1C77800BF6D82 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +246,7 @@
 		40BF497E1CC1C77800BF6D82 /* EMUtils */ = {
 			isa = PBXGroup;
 			children = (
+				407D198B1CC37E3500C102D5 /* CBL */,
 				407D19821CC2BBA300C102D5 /* NS* */,
 				40BF49A11CC1C9E100BF6D82 /* UI* */,
 				407D19741CC2322400C102D5 /* Enumerate.swift */,
@@ -243,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				407D197A1CC23CE900C102D5 /* EnumerateTests.swift */,
+				407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */,
 				407D197C1CC23CFC00C102D5 /* Supporting Files */,
 			);
 			path = EMUtilsTests;
@@ -298,6 +316,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407D198F1CC37E5200C102D5 /* CBLParseDate.h in Headers */,
 				407D19871CC2BC2F00C102D5 /* NSDate+ISO8601.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +527,7 @@
 				407D19841CC2BBB100C102D5 /* NSDate+EMUtils.swift in Sources */,
 				40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */,
 				40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */,
+				407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */,
 				40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407D19911CC3806600C102D5 /* NSDate+EMUtilsTests.swift in Sources */,
 				407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
