@@ -25,4 +25,13 @@ extension UIView {
         }
         return nil
     }
+
+
+    public func addFixedSubview(subview: UIView) {
+        addSubview(subview)
+        subview.frame = CGRect(x: 0.0, y: 0.0, width: frame.width, height: frame.height)
+        let views = ["subview": subview]
+        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[subview]-0-|", options: [], metrics: nil, views: views))
+        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[subview]-0-|", options: [], metrics: nil, views: views))
+    }
 }
