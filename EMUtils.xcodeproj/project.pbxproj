@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */; };
+		405BB1A91CCAC30A00736787 /* compile-colors.sh in Resources */ = {isa = PBXBuildFile; fileRef = 405BB1A81CCAC30A00736787 /* compile-colors.sh */; };
 		407D19731CC229D600C102D5 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407D19621CC229AE00C102D5 /* AEXML.framework */; };
 		407D19751CC2322400C102D5 /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
 		407D19761CC23C8000C102D5 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
@@ -116,6 +117,7 @@
 
 /* Begin PBXFileReference section */
 		405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+EMUtils.swift"; sourceTree = "<group>"; };
+		405BB1A81CCAC30A00736787 /* compile-colors.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "compile-colors.sh"; sourceTree = "<group>"; };
 		407D19561CC229AE00C102D5 /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = ../AEXML/AEXML.xcodeproj; sourceTree = "<group>"; };
 		407D19741CC2322400C102D5 /* Enumerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerate.swift; sourceTree = "<group>"; };
 		407D19791CC23CE900C102D5 /* EMUtilsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtilsTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		407D19891CC2BD9600C102D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				405BB1A81CCAC30A00736787 /* compile-colors.sh */,
 				407D198A1CC2BDA600C102D5 /* EMUtils-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
@@ -501,6 +504,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				405BB1A91CCAC30A00736787 /* compile-colors.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
