@@ -27,6 +27,8 @@
 		40BF49C71CC1D10C00BF6D82 /* EMJUnitTestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */; };
 		40C004B31E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */; };
 		40C004B41E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */; };
+		40C004BF1E6AAEAE009CCFBA /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
+		40C004C61E6AAEB2009CCFBA /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49981CC1C7F100BF6D82 /* Reflection.swift */; };
 		40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */; };
 		40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */; };
 /* End PBXBuildFile section */
@@ -606,6 +608,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C004B41E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
+				40C004BF1E6AAEAE009CCFBA /* Enumerate.swift in Sources */,
+				40C004C61E6AAEB2009CCFBA /* Reflection.swift in Sources */,
 				40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
