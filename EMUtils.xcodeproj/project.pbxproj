@@ -25,6 +25,10 @@
 		40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */; };
 		40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A61CC1CA4400BF6D82 /* UIViewController+EMUtils.swift */; };
 		40BF49C71CC1D10C00BF6D82 /* EMJUnitTestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */; };
+		40C004B31E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */; };
+		40C004B41E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */; };
+		40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */; };
+		40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +136,8 @@
 		40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMJUnitTestObserver.swift; sourceTree = "<group>"; };
 		40BF49B91CC1CD3500BF6D82 /* EMUtilsTestBase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtilsTestBase-Bridging-Header.h"; sourceTree = "<group>"; };
 		40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtilsTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnownedWrapper.swift; sourceTree = "<group>"; };
+		40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakWrapper.swift; sourceTree = "<group>"; };
 		40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = "../3rd-party/AEXML/AEXML.xcodeproj"; sourceTree = "<group>"; };
 		40C9B9511E636B2700DC9ED8 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -241,6 +247,8 @@
 				40BF49A11CC1C9E100BF6D82 /* UI* */,
 				407D19741CC2322400C102D5 /* Enumerate.swift */,
 				40BF49981CC1C7F100BF6D82 /* Reflection.swift */,
+				40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */,
+				40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */,
 				407D19891CC2BD9600C102D5 /* Supporting Files */,
 			);
 			path = EMUtils;
@@ -563,12 +571,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				407D19751CC2322400C102D5 /* Enumerate.swift in Sources */,
+				40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */,
 				407D19881CC2BC2F00C102D5 /* NSDate+ISO8601.m in Sources */,
 				407D19841CC2BBB100C102D5 /* NSDate+EMUtils.swift in Sources */,
 				40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */,
 				40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */,
 				407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */,
 				40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */,
+				40C004B31E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
 				405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +598,15 @@
 			files = (
 				407D19811CC2B78C00C102D5 /* EMTestCaseBase.swift in Sources */,
 				40BF49C71CC1D10C00BF6D82 /* EMJUnitTestObserver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C9B94C1E636B2700DC9ED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40C004B41E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
+				40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
