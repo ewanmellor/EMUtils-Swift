@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */; };
 		405BB1A91CCAC30A00736787 /* compile-colors.sh in Resources */ = {isa = PBXBuildFile; fileRef = 405BB1A81CCAC30A00736787 /* compile-colors.sh */; };
-		407D19731CC229D600C102D5 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407D19621CC229AE00C102D5 /* AEXML.framework */; };
 		407D19751CC2322400C102D5 /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
 		407D19761CC23C8000C102D5 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
 		407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D197A1CC23CE900C102D5 /* EnumerateTests.swift */; };
@@ -29,69 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		407D19611CC229AE00C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B4A92791BDD47210011F36F;
-			remoteInfo = "AEXML iOS";
-		};
-		407D19631CC229AE00C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B4A92991BDD4CEF0011F36F;
-			remoteInfo = "AEXML iOS Tests";
-		};
-		407D19651CC229AE00C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B4A928A1BDD49390011F36F;
-			remoteInfo = "AEXML OSX";
-		};
-		407D19671CC229AE00C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B4A92AB1BDD54F50011F36F;
-			remoteInfo = "AEXML OSX Tests";
-		};
-		407D19691CC229AE00C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B4A92BE1BDD5B300011F36F;
-			remoteInfo = "AEXML tvOS";
-		};
-		407D196B1CC229AE00C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B4A92CC1BDD5BB20011F36F;
-			remoteInfo = "AEXML tvOS Tests";
-		};
-		407D196D1CC229AE00C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8B4A92DF1BDD5D330011F36F;
-			remoteInfo = "AEXML watchOS";
-		};
-		407D196F1CC229AE00C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8BFE78A919F0054100914487;
-			remoteInfo = AEXMLExample;
-		};
-		407D19711CC229C200C102D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8B4A92781BDD47210011F36F;
-			remoteInfo = "AEXML iOS";
-		};
 		407D19771CC23C8A00C102D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40BF49731CC1C77800BF6D82 /* Project object */;
@@ -113,12 +49,67 @@
 			remoteGlobalIDString = 40BF497B1CC1C77800BF6D82;
 			remoteInfo = EMUtils;
 		};
+		40C1FFF11E63A29300AFF3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92791BDD47210011F36F;
+			remoteInfo = "AEXML iOS";
+		};
+		40C1FFF31E63A29300AFF3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92DF1BDD5D330011F36F;
+			remoteInfo = "AEXML watchOS";
+		};
+		40C1FFF51E63A29300AFF3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92991BDD4CEF0011F36F;
+			remoteInfo = "AEXML iOS Tests";
+		};
+		40C1FFF71E63A29300AFF3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92BE1BDD5B300011F36F;
+			remoteInfo = "AEXML tvOS";
+		};
+		40C1FFF91E63A29300AFF3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92CC1BDD5BB20011F36F;
+			remoteInfo = "AEXML tvOS Tests";
+		};
+		40C1FFFB1E63A29300AFF3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A928A1BDD49390011F36F;
+			remoteInfo = "AEXML OSX";
+		};
+		40C1FFFD1E63A29300AFF3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B4A92AB1BDD54F50011F36F;
+			remoteInfo = "AEXML OSX Tests";
+		};
+		40C1FFFF1E63A2AB00AFF3FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4A92781BDD47210011F36F;
+			remoteInfo = "AEXML iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+EMUtils.swift"; sourceTree = "<group>"; };
 		405BB1A81CCAC30A00736787 /* compile-colors.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "compile-colors.sh"; sourceTree = "<group>"; };
-		407D19561CC229AE00C102D5 /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = ../AEXML/AEXML.xcodeproj; sourceTree = "<group>"; };
 		407D19741CC2322400C102D5 /* Enumerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerate.swift; sourceTree = "<group>"; };
 		407D19791CC23CE900C102D5 /* EMUtilsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtilsTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		407D197A1CC23CE900C102D5 /* EnumerateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumerateTests.swift; sourceTree = "<group>"; };
@@ -141,6 +132,8 @@
 		40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMJUnitTestObserver.swift; sourceTree = "<group>"; };
 		40BF49B91CC1CD3500BF6D82 /* EMUtilsTestBase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtilsTestBase-Bridging-Header.h"; sourceTree = "<group>"; };
 		40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtilsTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = "../3rd-party/AEXML/AEXML.xcodeproj"; sourceTree = "<group>"; };
+		40C9B9511E636B2700DC9ED8 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,29 +157,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				407D19731CC229D600C102D5 /* AEXML.framework in Frameworks */,
 				407D19761CC23C8000C102D5 /* EMUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C9B94D1E636B2700DC9ED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		407D19571CC229AE00C102D5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				407D19621CC229AE00C102D5 /* AEXML.framework */,
-				407D19641CC229AE00C102D5 /* AEXML iOS Tests.xctest */,
-				407D19661CC229AE00C102D5 /* AEXML.framework */,
-				407D19681CC229AE00C102D5 /* AEXML OSX Tests.xctest */,
-				407D196A1CC229AE00C102D5 /* AEXML.framework */,
-				407D196C1CC229AE00C102D5 /* AEXML tvOS Tests.xctest */,
-				407D196E1CC229AE00C102D5 /* AEXML.framework */,
-				407D19701CC229AE00C102D5 /* AEXMLExample.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		407D197C1CC23CFC00C102D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,13 +212,13 @@
 		40BF49721CC1C77800BF6D82 = {
 			isa = PBXGroup;
 			children = (
+				40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */,
 				40BF497E1CC1C77800BF6D82 /* EMUtils */,
 				40BF498A1CC1C77900BF6D82 /* EMUtilsTests */,
 				40BF49B51CC1CBFB00BF6D82 /* EMUtilsTestBase */,
 				40BF49A01CC1C87900BF6D82 /* EMUtils.framework */,
 				40BF49AE1CC1CB6500BF6D82 /* EMUtilsTestBase.framework */,
 				40BF497D1CC1C77800BF6D82 /* Products */,
-				407D19561CC229AE00C102D5 /* AEXML.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,6 +228,7 @@
 				40BF497C1CC1C77800BF6D82 /* EMUtils.framework */,
 				40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */,
 				40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */,
+				40C9B9511E636B2700DC9ED8 /* EMUtils.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,6 +300,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		40C1FFE81E63A29300AFF3FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40C1FFF21E63A29300AFF3FD /* AEXML.framework */,
+				40C1FFF41E63A29300AFF3FD /* AEXML.framework */,
+				40C1FFF61E63A29300AFF3FD /* AEXML iOS Tests.xctest */,
+				40C1FFF81E63A29300AFF3FD /* AEXML.framework */,
+				40C1FFFA1E63A29300AFF3FD /* AEXML tvOS Tests.xctest */,
+				40C1FFFC1E63A29300AFF3FD /* AEXML.framework */,
+				40C1FFFE1E63A29300AFF3FD /* AEXML OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -334,12 +333,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40C9B94E1E636B2700DC9ED8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		40BF497B1CC1C77800BF6D82 /* EMUtils */ = {
+		40BF497B1CC1C77800BF6D82 /* EMUtils iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40BF49901CC1C77900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtils" */;
+			buildConfigurationList = 40BF49901CC1C77900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtils iOS" */;
 			buildPhases = (
 				40BF49771CC1C77800BF6D82 /* Sources */,
 				40BF49781CC1C77800BF6D82 /* Frameworks */,
@@ -350,7 +356,7 @@
 			);
 			dependencies = (
 			);
-			name = EMUtils;
+			name = "EMUtils iOS";
 			productName = EMUtils;
 			productReference = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */;
 			productType = "com.apple.product-type.framework";
@@ -386,12 +392,30 @@
 			buildRules = (
 			);
 			dependencies = (
-				407D19721CC229C200C102D5 /* PBXTargetDependency */,
+				40C100001E63A2AB00AFF3FD /* PBXTargetDependency */,
 				407D19781CC23C8A00C102D5 /* PBXTargetDependency */,
 			);
 			name = EMUtilsTestBase;
 			productName = EMUtilsTestBase;
 			productReference = 40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		40C9B9501E636B2700DC9ED8 /* EMUtils macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C9B9561E636B2700DC9ED8 /* Build configuration list for PBXNativeTarget "EMUtils macOS" */;
+			buildPhases = (
+				40C9B94C1E636B2700DC9ED8 /* Sources */,
+				40C9B94D1E636B2700DC9ED8 /* Frameworks */,
+				40C9B94E1E636B2700DC9ED8 /* Headers */,
+				40C9B94F1E636B2700DC9ED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EMUtils macOS";
+			productName = EMUtils;
+			productReference = 40C9B9511E636B2700DC9ED8 /* EMUtils.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -401,17 +425,25 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ewan Mellor";
 				TargetAttributes = {
 					40BF497B1CC1C77800BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					40BF49851CC1C77900BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 					};
 					40BF49BE1CC1CE3900BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
+					};
+					40C9B9501E636B2700DC9ED8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7MM34246C9;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -427,13 +459,14 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 407D19571CC229AE00C102D5 /* Products */;
-					ProjectRef = 407D19561CC229AE00C102D5 /* AEXML.xcodeproj */;
+					ProductGroup = 40C1FFE81E63A29300AFF3FD /* Products */;
+					ProjectRef = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				40BF497B1CC1C77800BF6D82 /* EMUtils */,
+				40BF497B1CC1C77800BF6D82 /* EMUtils iOS */,
+				40C9B9501E636B2700DC9ED8 /* EMUtils macOS */,
 				40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase */,
 				40BF49851CC1C77900BF6D82 /* EMUtilsTests */,
 			);
@@ -441,60 +474,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		407D19621CC229AE00C102D5 /* AEXML.framework */ = {
+		40C1FFF21E63A29300AFF3FD /* AEXML.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AEXML.framework;
-			remoteRef = 407D19611CC229AE00C102D5 /* PBXContainerItemProxy */;
+			remoteRef = 40C1FFF11E63A29300AFF3FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		407D19641CC229AE00C102D5 /* AEXML iOS Tests.xctest */ = {
+		40C1FFF41E63A29300AFF3FD /* AEXML.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AEXML.framework;
+			remoteRef = 40C1FFF31E63A29300AFF3FD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40C1FFF61E63A29300AFF3FD /* AEXML iOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "AEXML iOS Tests.xctest";
-			remoteRef = 407D19631CC229AE00C102D5 /* PBXContainerItemProxy */;
+			remoteRef = 40C1FFF51E63A29300AFF3FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		407D19661CC229AE00C102D5 /* AEXML.framework */ = {
+		40C1FFF81E63A29300AFF3FD /* AEXML.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AEXML.framework;
-			remoteRef = 407D19651CC229AE00C102D5 /* PBXContainerItemProxy */;
+			remoteRef = 40C1FFF71E63A29300AFF3FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		407D19681CC229AE00C102D5 /* AEXML OSX Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AEXML OSX Tests.xctest";
-			remoteRef = 407D19671CC229AE00C102D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		407D196A1CC229AE00C102D5 /* AEXML.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = AEXML.framework;
-			remoteRef = 407D19691CC229AE00C102D5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		407D196C1CC229AE00C102D5 /* AEXML tvOS Tests.xctest */ = {
+		40C1FFFA1E63A29300AFF3FD /* AEXML tvOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "AEXML tvOS Tests.xctest";
-			remoteRef = 407D196B1CC229AE00C102D5 /* PBXContainerItemProxy */;
+			remoteRef = 40C1FFF91E63A29300AFF3FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		407D196E1CC229AE00C102D5 /* AEXML.framework */ = {
+		40C1FFFC1E63A29300AFF3FD /* AEXML.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AEXML.framework;
-			remoteRef = 407D196D1CC229AE00C102D5 /* PBXContainerItemProxy */;
+			remoteRef = 40C1FFFB1E63A29300AFF3FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		407D19701CC229AE00C102D5 /* AEXMLExample.app */ = {
+		40C1FFFE1E63A29300AFF3FD /* AEXML OSX Tests.xctest */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = AEXMLExample.app;
-			remoteRef = 407D196F1CC229AE00C102D5 /* PBXContainerItemProxy */;
+			fileType = wrapper.cfbundle;
+			path = "AEXML OSX Tests.xctest";
+			remoteRef = 40C1FFFD1E63A29300AFF3FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -516,6 +542,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		40BF49BD1CC1CE3900BF6D82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40C9B94F1E636B2700DC9ED8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -561,14 +594,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		407D19721CC229C200C102D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "AEXML iOS";
-			targetProxy = 407D19711CC229C200C102D5 /* PBXContainerItemProxy */;
-		};
 		407D19781CC23C8A00C102D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 40BF497B1CC1C77800BF6D82 /* EMUtils */;
+			target = 40BF497B1CC1C77800BF6D82 /* EMUtils iOS */;
 			targetProxy = 407D19771CC23C8A00C102D5 /* PBXContainerItemProxy */;
 		};
 		407D197F1CC2B73200C102D5 /* PBXTargetDependency */ = {
@@ -578,8 +606,13 @@
 		};
 		40BF49891CC1C77900BF6D82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 40BF497B1CC1C77800BF6D82 /* EMUtils */;
+			target = 40BF497B1CC1C77800BF6D82 /* EMUtils iOS */;
 			targetProxy = 40BF49881CC1C77900BF6D82 /* PBXContainerItemProxy */;
+		};
+		40C100001E63A2AB00AFF3FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AEXML iOS";
+			targetProxy = 40C1FFFF1E63A2AB00AFF3FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -598,8 +631,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -622,7 +657,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -647,8 +683,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -665,9 +703,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -679,18 +719,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/EMUtils.framework/Info.plist";
+				INFOPLIST_FILE = EMUtils.framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtils;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EMUtils;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -698,17 +740,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/EMUtils.framework/Info.plist";
+				INFOPLIST_FILE = EMUtils.framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtils;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EMUtils;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -722,6 +766,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtilsTests/EMUtilsTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -734,12 +779,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtilsTests/EMUtilsTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		40BF49C51CC1CE3900BF6D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -753,12 +800,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		40BF49C61CC1CE3900BF6D82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -772,6 +821,56 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		40C9B9571E636B2700DC9ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7MM34246C9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = EMUtils.framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtils;
+				PRODUCT_NAME = EMUtils;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		40C9B9581E636B2700DC9ED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7MM34246C9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = EMUtils.framework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtils;
+				PRODUCT_NAME = EMUtils;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -787,7 +886,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40BF49901CC1C77900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtils" */ = {
+		40BF49901CC1C77900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtils iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40BF49911CC1C77900BF6D82 /* Debug */,
@@ -810,6 +909,15 @@
 			buildConfigurations = (
 				40BF49C51CC1CE3900BF6D82 /* Debug */,
 				40BF49C61CC1CE3900BF6D82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C9B9561E636B2700DC9ED8 /* Build configuration list for PBXNativeTarget "EMUtils macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40C9B9571E636B2700DC9ED8 /* Debug */,
+				40C9B9581E636B2700DC9ED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

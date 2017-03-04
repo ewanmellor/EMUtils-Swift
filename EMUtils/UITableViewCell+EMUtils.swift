@@ -14,13 +14,13 @@ public extension UITableViewCell {
         return NSStringFromClass(self)
     }
 
-    public class func registerNibOnTableView(tableView: UITableView) {
+    public class func registerNibOnTableView(_ tableView: UITableView) {
         let cellId = cellIdentifier
         let nib = UINib(nibName: cellId, bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: cellId)
+        tableView.register(nib, forCellReuseIdentifier: cellId)
     }
 
-    public class func dequeueFromTableView<T: UITableViewCell>(tableView: UITableView, forIndexPath indexPath: NSIndexPath) -> T {
-        return tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! T
+    public class func dequeueFromTableView<T: UITableViewCell>(_ tableView: UITableView, forIndexPath indexPath: IndexPath) -> T {
+        return tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! T
     }
 }

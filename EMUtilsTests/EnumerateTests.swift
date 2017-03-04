@@ -19,7 +19,7 @@ class EnumerateTests: EMTestCaseBase {
         var result = [Int]()
         let expected = [5, 7, 9]
 
-        Enumerate.pairwiseOver(a1, and: a2) { (o1, o2) in
+        Enumerate.pairwise(a1, a2) { (o1, o2) in
             result.append(o1 + o2)
         }
 
@@ -33,7 +33,7 @@ class EnumerateTests: EMTestCaseBase {
         var result = [Int]()
         let expected = [5, 7]
 
-        Enumerate.pairwiseOver(a1, and: a2) { (o1, o2) in
+        Enumerate.pairwise(a1, a2) { (o1, o2) in
             result.append(o1 + o2)
         }
 
@@ -46,7 +46,7 @@ class EnumerateTests: EMTestCaseBase {
         var result = [Int]()
         let expected = [5, 7, 9, 11]
 
-        let returnedVal = Enumerate.pairwiseOver(a1, and: a2) { (o1, o2) -> (Bool, String?) in
+        let returnedVal = Enumerate.pairwiseWithResult(a1, a2) { (o1, o2) -> (Bool, String?) in
             result.append(o1 + o2)
             if o1 == 4 {
                 return (true, "Spiffing")
@@ -67,7 +67,7 @@ class EnumerateTests: EMTestCaseBase {
         var result = [Int]()
         let expected = [5, 7, 9]
 
-        let returnedVal = Enumerate.pairwiseOver(a1, and: a2) { (o1, o2) -> (Bool, String?) in
+        let returnedVal = Enumerate.pairwiseWithResult(a1, a2) { (o1, o2) -> (Bool, String?) in
             result.append(o1 + o2)
             return (false, nil)
         }
@@ -83,7 +83,7 @@ class EnumerateTests: EMTestCaseBase {
         var result = [Int]()
         let expected = [5, 7]
 
-        let returnedVal = Enumerate.pairwiseOver(a1, and: a2) { (o1, o2) -> (Bool, Any?) in
+        let returnedVal = Enumerate.pairwiseWithResult(a1, a2) { (o1, o2) -> (Bool, Any?) in
             result.append(o1 + o2)
             return (o1 == 2, nil)
         }

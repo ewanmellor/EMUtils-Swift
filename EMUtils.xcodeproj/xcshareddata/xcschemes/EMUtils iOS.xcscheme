@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "40BF49BE1CC1CE3900BF6D82"
-               BuildableName = "EMUtilsTestBase.framework"
-               BlueprintName = "EMUtilsTestBase"
+               BlueprintIdentifier = "40BF497B1CC1C77800BF6D82"
+               BuildableName = "EMUtils.framework"
+               BlueprintName = "EMUtils iOS"
                ReferencedContainer = "container:EMUtils.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,9 +26,35 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "NO">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "40BF49851CC1C77900BF6D82"
+               BuildableName = "EMUtilsTests.xctest"
+               BlueprintName = "EMUtilsTests"
+               ReferencedContainer = "container:EMUtils.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "40BF497B1CC1C77800BF6D82"
+            BuildableName = "EMUtils.framework"
+            BlueprintName = "EMUtils iOS"
+            ReferencedContainer = "container:EMUtils.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "EMJUnitTestObserverReportDestination"
+            value = "${SRCROOT}/test-report.xml"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,9 +71,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "40BF49BE1CC1CE3900BF6D82"
-            BuildableName = "EMUtilsTestBase.framework"
-            BlueprintName = "EMUtilsTestBase"
+            BlueprintIdentifier = "40BF497B1CC1C77800BF6D82"
+            BuildableName = "EMUtils.framework"
+            BlueprintName = "EMUtils iOS"
             ReferencedContainer = "container:EMUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +89,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "40BF49BE1CC1CE3900BF6D82"
-            BuildableName = "EMUtilsTestBase.framework"
-            BlueprintName = "EMUtilsTestBase"
+            BlueprintIdentifier = "40BF497B1CC1C77800BF6D82"
+            BuildableName = "EMUtils.framework"
+            BlueprintName = "EMUtils iOS"
             ReferencedContainer = "container:EMUtils.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

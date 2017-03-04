@@ -16,14 +16,14 @@ import XCTest
  */
 @available(*, deprecated)
 @objc(EMJUnitTestObserver)
-public class EMJUnitTestObserver: XCTestObserver {
-    private class RunInfo {
-        private var failures: [String: String]?
-        private var failureLocations: [String: String]?
-        private var logs: [String: [String]]?
+open class EMJUnitTestObserver: XCTestObserver {
+    fileprivate class RunInfo {
+        fileprivate var failures: [String: String]?
+        fileprivate var failureLocations: [String: String]?
+        fileprivate var logs: [String: [String]]?
     }
 
-    private let reportDestination: NSURL
+    private let reportDestination: URL
 
     private var suites = [XCTestSuiteRun]()
     private var suiteRunInfo = [RunInfo]()
@@ -37,7 +37,7 @@ public class EMJUnitTestObserver: XCTestObserver {
         super.init()
     }
 
-    override public func startObserving() {
+    override open func startObserving() {
         super.startObserving()
 
         suites.removeAll()
@@ -45,7 +45,7 @@ public class EMJUnitTestObserver: XCTestObserver {
     }
 
 
-    override public func stopObserving() {
+    override open func stopObserving() {
         writeReport()
 
         suites.removeAll()
@@ -55,14 +55,14 @@ public class EMJUnitTestObserver: XCTestObserver {
     }
 
 
-    override public func testSuiteDidStart(testRun: XCTestRun!) {
+    override open func testSuiteDidStart(_ testRun: XCTestRun!) {
         suiteFailures = [String: String]()
         suiteFailureLocations.removeAll()
         suiteLogs.removeAll()
     }
 
 
-    override public func testSuiteDidStop(testRun: XCTestRun!) {
+    override open func testSuiteDidStop(_ testRun: XCTestRun!) {
         if suiteFailures == nil {
             // XCTest has nested suites -- the "All tests" suite is
             // outermost, then your project, then the class.
@@ -87,17 +87,17 @@ public class EMJUnitTestObserver: XCTestObserver {
     }
 
 
-    override public func testCaseDidStart(testRun: XCTestRun!) {
+    override open func testCaseDidStart(_ testRun: XCTestRun!) {
         super.testCaseDidStart(testRun)
     }
 
 
-    override public func testCaseDidStop(testRun: XCTestRun!) {
+    override open func testCaseDidStop(_ testRun: XCTestRun!) {
         suiteLogs[testRun.test.name!] = [String]()
     }
 
 
-    override public func testCaseDidFail(testRun: XCTestRun!, withDescription description: String!, inFile filePath: String!, atLine lineNumber: UInt) {
+    override open func testCaseDidFail(_ testRun: XCTestRun!, withDescription description: String!, inFile filePath: String!, atLine lineNumber: UInt) {
         let name = testRun.test.name!
         suiteFailures![name] = description
         suiteFailureLocations[name] = "\(filePath):\(lineNumber)"
@@ -109,12 +109,12 @@ public class EMJUnitTestObserver: XCTestObserver {
         let attrs = testSuiteRunAttrs(topRun)
         let suitesEl = doc.addChild(name: "testsuites", value: nil, attributes: attrs)
 
-        Enumerate.pairwiseOver(suites, and: suiteRunInfo, block: { (suite, runInfo) in
+        Enumerate.pairwise(suites, suiteRunInfo) { (suite, runInfo) in
             let _ = suitesEl.addChild(testSuiteRunToXML(suite, failures: runInfo.failures, failureLocations: runInfo.failureLocations, logs: runInfo.logs))
-        })
+        }
 
         do {
-            try doc.xmlString.writeToURL(reportDestination, atomically: false, encoding: NSUTF8StringEncoding)
+            try doc.xml.write(to: reportDestination, atomically: false, encoding: String.Encoding.utf8)
             NSLog("Test results written to \(reportDestination)")
         }
         catch let exn {
@@ -127,9 +127,9 @@ public class EMJUnitTestObserver: XCTestObserver {
 private let testNameRE = try! NSRegularExpression(pattern: "^-\\[[^ ]+ (.*)\\]$", options: [])
 
 
-private func testSuiteRunToXML(suiteRun: XCTestSuiteRun, failures: [String: String]?, failureLocations: [String: String]?, logs: [String: [String]]?) -> AEXMLElement {
+private func testSuiteRunToXML(_ suiteRun: XCTestSuiteRun, failures: [String: String]?, failureLocations: [String: String]?, logs: [String: [String]]?) -> AEXMLElement {
     let attrs = testSuiteRunAttrs(suiteRun)
-    let result = AEXMLElement("testsuite", value: nil, attributes: attrs)
+    let result = AEXMLElement(name: "testsuite", value: nil, attributes: attrs)
 
     for testRun in suiteRun.testRuns {
         let name = testRun.test.name!
@@ -141,15 +141,15 @@ private func testSuiteRunToXML(suiteRun: XCTestSuiteRun, failures: [String: Stri
 }
 
 
-private func testRunToXML(testRun: XCTestRun, _ failure: String?, _ failureLocation: String?, _ logs: [String]?) -> AEXMLElement {
+private func testRunToXML(_ testRun: XCTestRun, _ failure: String?, _ failureLocation: String?, _ logs: [String]?) -> AEXMLElement {
 
     let testName = testRun.test.name!
-    let matches = testNameRE.matchesInString(testName, options: [], range: NSMakeRange(0, testName.utf16.count))
+    let matches = testNameRE.matches(in: testName, options: [], range: NSMakeRange(0, testName.utf16.count))
 
     var bareTestName: String
     if matches.count > 0 {
         let match = matches[0]
-        bareTestName = (testName as NSString).substringWithRange(match.rangeAtIndex(1))
+        bareTestName = (testName as NSString).substring(with: match.rangeAt(1))
     }
     else {
         bareTestName = testName
@@ -157,13 +157,13 @@ private func testRunToXML(testRun: XCTestRun, _ failure: String?, _ failureLocat
 
     var attrs = [
         "name": bareTestName,
-        "classname": NSStringFromClass(testRun.test.dynamicType.self),
+        "classname": NSStringFromClass(type(of: testRun.test).self),
         "time": String(testRun.testDuration),
     ]
     if let startDate = testRun.startDate {
         attrs["timestamp"] = startDate.iso8601String_24
     }
-    let result = AEXMLElement("testcase", value: nil, attributes: attrs)
+    let result = AEXMLElement(name: "testcase", value: nil, attributes: attrs)
 
     if let failureEl = failureToXML(failure, failureLocation) {
         result.addChild(failureEl)
@@ -179,7 +179,7 @@ private func testRunToXML(testRun: XCTestRun, _ failure: String?, _ failureLocat
 }
 
 
-private func failureToXML(msg: String?, _ location: String?) -> AEXMLElement? {
+private func failureToXML(_ msg: String?, _ location: String?) -> AEXMLElement? {
     if msg == nil && location == nil {
         return nil
     }
@@ -188,11 +188,11 @@ private func failureToXML(msg: String?, _ location: String?) -> AEXMLElement? {
     if (msg != nil) {
         attrs["message"] = msg
     }
-    return AEXMLElement("failure", value: location, attributes: attrs)
+    return AEXMLElement(name: "failure", value: location, attributes: attrs)
 }
 
 
-private func testSuiteRunAttrs(run: XCTestRun) -> [String: String] {
+private func testSuiteRunAttrs(_ run: XCTestRun) -> [String: String] {
     var attrs = [
         "name": run.test.name!,
         "tests": String(run.testCaseCount),
@@ -207,11 +207,11 @@ private func testSuiteRunAttrs(run: XCTestRun) -> [String: String] {
 }
 
 
-private func getReportDest() -> NSURL {
-    if let dest = NSProcessInfo().environment["EMJUnitTestObserverReportDestination"] where dest != "" {
-        return NSURL(fileURLWithPath: dest)
+private func getReportDest() -> URL {
+    if let dest = ProcessInfo().environment["EMJUnitTestObserverReportDestination"], dest != "" {
+        return URL(fileURLWithPath: dest)
     }
 
-    let cwd = NSURL(fileURLWithPath: NSFileManager.defaultManager().currentDirectoryPath)
-    return cwd.URLByAppendingPathComponent("test-report.xml")
+    let cwd = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
+    return cwd.appendingPathComponent("test-report.xml")
 }

@@ -9,11 +9,10 @@
 import Foundation
 
 
-public extension NSDate {
-    convenience init?(iso8601 s: String) {
-        let t = NSDate.timeIntervalSinceReferenceDateFromIso8601(s)
-        if isnan(t) {
-            self.init() // Work around https://bugs.swift.org/browse/SR-704
+public extension Date {
+    init?(iso8601 s: String) {
+        let t = NSDate.timeIntervalSinceReferenceDate(fromIso8601: s)
+        if t.isNaN {
             return nil
         }
         self.init(timeIntervalSinceReferenceDate: t)
@@ -21,22 +20,22 @@ public extension NSDate {
 
 
     public var iso8601String_16: String {
-        return em_iso8601String_16()
+        return (self as NSDate).em_iso8601String_16()
     }
 
     public var iso8601String_19: String {
-        return em_iso8601String_19()
+        return (self as NSDate).em_iso8601String_19()
     }
 
     public var iso8601String_23: String {
-        return em_iso8601String_23()
+        return (self as NSDate).em_iso8601String_23()
     }
 
     public var iso8601String_local_23: String {
-        return em_iso8601String_local_23()
+        return (self as NSDate).em_iso8601String_local_23()
     }
 
     public var iso8601String_24: String {
-        return em_iso8601String_24()
+        return (self as NSDate).em_iso8601String_24()
     }
 }

@@ -10,17 +10,17 @@ import Foundation
 import XCTest
 
 
-public class EMTestCaseBase: XCTestCase {
-    public override class func initialize() {
+open class EMTestCaseBase: XCTestCase {
+    open override class func initialize() {
         if self !== EMTestCaseBase.self {
             return
         }
 
         let className = "EMJUnitTestObserver"
 
-        let defaults = NSUserDefaults.standardUserDefaults()
-        var observers = defaults.stringForKey("XCTestObserverClass") ?? "XCTestLog"
-        if !observers.containsString(className) {
+        let defaults = UserDefaults.standard
+        var observers = defaults.string(forKey: "XCTestObserverClass") ?? "XCTestLog"
+        if !observers.contains(className) {
             observers = "\(observers),\(className)"
         }
 
@@ -28,7 +28,7 @@ public class EMTestCaseBase: XCTestCase {
     }
 
 
-    public override func setUp() {
+    open override func setUp() {
         super.setUp()
         continueAfterFailure = false
     }

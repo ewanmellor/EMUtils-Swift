@@ -18,7 +18,7 @@ extension UIViewController {
         return (
             (presentingViewController?.presentedViewController == self) ||
                 (navigationController?.presentingViewController?.presentedViewController == navigationController) ||
-                (tabBarController?.presentingViewController?.isKindOfClass(UITabBarController) ?? false)
+                (tabBarController?.presentingViewController?.isKind(of: UITabBarController.self) ?? false)
         )
     }
 
@@ -27,10 +27,10 @@ extension UIViewController {
      */
     func dismissOrPop() {
         if (isModal) {
-            dismissViewControllerAnimated(true, completion: nil)
+            dismiss(animated: true, completion: nil)
         }
         else {
-            navigationController?.popViewControllerAnimated(true)
+            let _ = navigationController?.popViewController(animated: true)
         }
     }
 }

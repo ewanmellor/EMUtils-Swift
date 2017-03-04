@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-// The iso8601String_* implementations here are 10x faster than using NSDateFormatter.
+// The em_iso8601String_* implementations here are 10x faster than using NSDateFormatter.
 
 
 #define FORMAT_16 "%4d-%02d-%02dT%02d:%02d"
@@ -34,8 +34,10 @@ static NSTimeInterval k1970ToReferenceDate;
 
 
 +(NSTimeInterval)timeIntervalSinceReferenceDateFromIso8601:(NSString *)s {
-    // Note that we round to 0.001 (i.e. msec) because CBLParseISO8601Date gives slightly different results compared
-    // with NSDateFormatter, and since we know that our dates are always msec precision we can truncate that away.
+    // Note that we round to 0.001 (i.e. msec) because CBLParseISO8601Date
+    // gives slightly different results compared with NSDateFormatter, and
+    // since we know that our dates are always msec precision we can
+    // truncate that away.
     return s == nil ? NAN : round(1000.0 * (CBLParseISO8601Date(s.UTF8String) + k1970ToReferenceDate)) / 1000.0;
 }
 
