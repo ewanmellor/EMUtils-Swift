@@ -10,6 +10,7 @@
 		402BA6901EB1C01200E35176 /* String+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+EMUtils.swift */; };
 		405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9011EBFF73A00E7227A /* AVCaptureView.swift */; };
 		405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */; };
+		405AC9171EC01A2400E7227A /* EMUtils-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198A1CC2BDA600C102D5 /* EMUtils-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		405AC91A1EC0209B00E7227A /* UIImage+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9191EC0209B00E7227A /* UIImage+EMUtils.swift */; };
 		405AC9551EC067B500E7227A /* UIWindow+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9541EC067B500E7227A /* UIWindow+EMUtils.swift */; };
 		405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */; };
@@ -368,6 +369,7 @@
 			files = (
 				407D198F1CC37E5200C102D5 /* CBLParseDate.h in Headers */,
 				407D19871CC2BC2F00C102D5 /* NSDate+ISO8601.h in Headers */,
+				405AC9171EC01A2400E7227A /* EMUtils-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
