@@ -1,7 +1,7 @@
 EMUtils-Swift
 =============
 
-A utility library for iOS and OS X in Swift.
+A utility library for iOS and macOS in Swift.
 
 
 Most of this code is Copyright (c) Ewan Mellor, and licensed under the terms of
