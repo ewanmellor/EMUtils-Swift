@@ -11,11 +11,7 @@ import XCTest
 
 
 open class EMTestCaseBase: XCTestCase {
-    open override class func initialize() {
-        if self !== EMTestCaseBase.self {
-            return
-        }
-
+    private static let dummy: () = {
         let className = "EMJUnitTestObserver"
 
         let defaults = UserDefaults.standard
@@ -25,7 +21,7 @@ open class EMTestCaseBase: XCTestCase {
         }
 
         defaults.setValue(observers, forKey: "XCTestObserverClass")
-    }
+    }()
 
 
     open override func setUp() {
