@@ -1,5 +1,5 @@
 //
-//  String+Misc.swift
+//  String+EMUtils.swift
 //  EMUtils
 //
 //  Created by Ewan Mellor on 4/26/17.

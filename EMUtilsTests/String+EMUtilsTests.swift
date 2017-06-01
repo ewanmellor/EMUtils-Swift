@@ -1,5 +1,5 @@
 //
-//  String+MiscTests.swift
+//  String+EMUtilsTests.swift
 //  EMUtils
 //
 //  Created by Ewan Mellor on 5/31/17.
@@ -11,7 +11,7 @@ import EMUtilsTestBase
 import XCTest
 
 
-class String_MiscTests: XCTestCase {
+class String_EMUtilsTests: XCTestCase {
     
     func testUnindented() {
         XCTAssertEqual("".unindented(), "")
