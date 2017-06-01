@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		402BA6901EB1C01200E35176 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+Misc.swift */; };
+		405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9011EBFF73A00E7227A /* AVCaptureView.swift */; };
+		405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */; };
 		405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */; };
 		405BB1A91CCAC30A00736787 /* compile-colors.sh in Resources */ = {isa = PBXBuildFile; fileRef = 405BB1A81CCAC30A00736787 /* compile-colors.sh */; };
 		407D19751CC2322400C102D5 /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
@@ -118,6 +120,8 @@
 
 /* Begin PBXFileReference section */
 		402BA68F1EB1C01200E35176 /* String+Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
+		405AC9011EBFF73A00E7227A /* AVCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureView.swift; sourceTree = "<group>"; };
+		405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureVisualEffectView.swift; sourceTree = "<group>"; };
 		405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+EMUtils.swift"; sourceTree = "<group>"; };
 		405BB1A81CCAC30A00736787 /* compile-colors.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "compile-colors.sh"; sourceTree = "<group>"; };
 		407D19741CC2322400C102D5 /* Enumerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerate.swift; sourceTree = "<group>"; };
@@ -184,6 +188,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		405AC9001EBFF72300E7227A /* AV* */ = {
+			isa = PBXGroup;
+			children = (
+				405AC9011EBFF73A00E7227A /* AVCaptureView.swift */,
+				405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */,
+			);
+			name = "AV*";
+			sourceTree = "<group>";
+		};
 		407D197C1CC23CFC00C102D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +262,7 @@
 		40BF497E1CC1C77800BF6D82 /* EMUtils */ = {
 			isa = PBXGroup;
 			children = (
+				405AC9001EBFF72300E7227A /* AV* */,
 				407D198B1CC37E3500C102D5 /* CBL */,
 				407D19821CC2BBA300C102D5 /* NS* */,
 				40BF49A11CC1C9E100BF6D82 /* UI* */,
@@ -587,9 +601,11 @@
 				40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */,
 				40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */,
 				407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */,
+				405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */,
 				40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */,
 				40C004B31E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
 				405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */,
+				405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
