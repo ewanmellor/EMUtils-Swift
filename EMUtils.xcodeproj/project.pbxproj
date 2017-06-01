@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		402BA6901EB1C01200E35176 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+Misc.swift */; };
 		405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */; };
 		405BB1A91CCAC30A00736787 /* compile-colors.sh in Resources */ = {isa = PBXBuildFile; fileRef = 405BB1A81CCAC30A00736787 /* compile-colors.sh */; };
 		407D19751CC2322400C102D5 /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
@@ -31,6 +32,8 @@
 		40C004C61E6AAEB2009CCFBA /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49981CC1C7F100BF6D82 /* Reflection.swift */; };
 		40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */; };
 		40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */; };
+		40C6F1521EDFE25300D64928 /* String+MiscTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6F1511EDFE25300D64928 /* String+MiscTests.swift */; };
+		40C6F1591EDFF90900D64928 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+Misc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		402BA68F1EB1C01200E35176 /* String+Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
 		405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+EMUtils.swift"; sourceTree = "<group>"; };
 		405BB1A81CCAC30A00736787 /* compile-colors.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "compile-colors.sh"; sourceTree = "<group>"; };
 		407D19741CC2322400C102D5 /* Enumerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 		40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnownedWrapper.swift; sourceTree = "<group>"; };
 		40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakWrapper.swift; sourceTree = "<group>"; };
 		40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = "../3rd-party/AEXML/AEXML.xcodeproj"; sourceTree = "<group>"; };
+		40C6F1511EDFE25300D64928 /* String+MiscTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+MiscTests.swift"; sourceTree = "<group>"; };
 		40C9B9511E636B2700DC9ED8 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -249,6 +254,7 @@
 				40BF49A11CC1C9E100BF6D82 /* UI* */,
 				407D19741CC2322400C102D5 /* Enumerate.swift */,
 				40BF49981CC1C7F100BF6D82 /* Reflection.swift */,
+				402BA68F1EB1C01200E35176 /* String+Misc.swift */,
 				40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */,
 				40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */,
 				407D19891CC2BD9600C102D5 /* Supporting Files */,
@@ -261,6 +267,7 @@
 			children = (
 				407D197A1CC23CE900C102D5 /* EnumerateTests.swift */,
 				407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */,
+				40C6F1511EDFE25300D64928 /* String+MiscTests.swift */,
 				407D197C1CC23CFC00C102D5 /* Supporting Files */,
 			);
 			path = EMUtilsTests;
@@ -572,6 +579,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402BA6901EB1C01200E35176 /* String+Misc.swift in Sources */,
 				407D19751CC2322400C102D5 /* Enumerate.swift in Sources */,
 				40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */,
 				407D19881CC2BC2F00C102D5 /* NSDate+ISO8601.m in Sources */,
@@ -591,6 +599,7 @@
 			files = (
 				407D19911CC3806600C102D5 /* NSDate+EMUtilsTests.swift in Sources */,
 				407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */,
+				40C6F1521EDFE25300D64928 /* String+MiscTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +616,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C6F1591EDFF90900D64928 /* String+Misc.swift in Sources */,
 				40C004B41E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
 				40C004BF1E6AAEAE009CCFBA /* Enumerate.swift in Sources */,
 				40C004C61E6AAEB2009CCFBA /* Reflection.swift in Sources */,
