@@ -11,6 +11,7 @@
 		405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9011EBFF73A00E7227A /* AVCaptureView.swift */; };
 		405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */; };
 		405AC91A1EC0209B00E7227A /* UIImage+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9191EC0209B00E7227A /* UIImage+EMUtils.swift */; };
+		405AC9551EC067B500E7227A /* UIWindow+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9541EC067B500E7227A /* UIWindow+EMUtils.swift */; };
 		405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */; };
 		405BB1A91CCAC30A00736787 /* compile-colors.sh in Resources */ = {isa = PBXBuildFile; fileRef = 405BB1A81CCAC30A00736787 /* compile-colors.sh */; };
 		407D19751CC2322400C102D5 /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
@@ -124,6 +125,7 @@
 		405AC9011EBFF73A00E7227A /* AVCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureView.swift; sourceTree = "<group>"; };
 		405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureVisualEffectView.swift; sourceTree = "<group>"; };
 		405AC9191EC0209B00E7227A /* UIImage+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EMUtils.swift"; sourceTree = "<group>"; };
+		405AC9541EC067B500E7227A /* UIWindow+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+EMUtils.swift"; sourceTree = "<group>"; };
 		405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+EMUtils.swift"; sourceTree = "<group>"; };
 		405BB1A81CCAC30A00736787 /* compile-colors.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "compile-colors.sh"; sourceTree = "<group>"; };
 		407D19741CC2322400C102D5 /* Enumerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerate.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */,
 				40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */,
 				40BF49A61CC1CA4400BF6D82 /* UIViewController+EMUtils.swift */,
+				405AC9541EC067B500E7227A /* UIWindow+EMUtils.swift */,
 			);
 			name = "UI*";
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */,
 				40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */,
 				40C004B31E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
+				405AC9551EC067B500E7227A /* UIWindow+EMUtils.swift in Sources */,
 				405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */,
 				405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */,
 			);
