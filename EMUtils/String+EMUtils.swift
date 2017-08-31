@@ -10,6 +10,10 @@ import Foundation
 
 
 public extension String {
+    public var isNotWhitespace: Bool {
+        return !trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+
     public func unindented() -> String {
         let re = try! NSRegularExpression(pattern: "^ +", options: .anchorsMatchLines)
         let range = NSRange(location: 0, length: characters.count)
