@@ -11,6 +11,10 @@
 		4020370A1F256911005BC02B /* Dictionary+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402037091F256911005BC02B /* Dictionary+EMUtilsTests.swift */; };
 		4020370B1F256980005BC02B /* Dictionary+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402037011F25674C005BC02B /* Dictionary+EMUtils.swift */; };
 		402BA6901EB1C01200E35176 /* String+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+EMUtils.swift */; };
+		402F6AF61F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */; };
+		402F6AF71F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */; };
+		402F6AFF1F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */; };
+		402F6B001F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */; };
 		405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9011EBFF73A00E7227A /* AVCaptureView.swift */; };
 		405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */; };
 		405AC9171EC01A2400E7227A /* EMUtils-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198A1CC2BDA600C102D5 /* EMUtils-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +46,7 @@
 		40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */; };
 		40C6F1521EDFE25300D64928 /* String+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */; };
 		40C6F1591EDFF90900D64928 /* String+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+EMUtils.swift */; };
+		40F8B6111F58C3DA0020F99B /* UUID+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8B6101F58C3DA0020F99B /* UUID+EMUtilsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +133,8 @@
 		402037011F25674C005BC02B /* Dictionary+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+EMUtils.swift"; sourceTree = "<group>"; };
 		402037091F256911005BC02B /* Dictionary+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		402BA68F1EB1C01200E35176 /* String+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EMUtils.swift"; sourceTree = "<group>"; };
+		402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+EMUtils.swift"; sourceTree = "<group>"; };
+		402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+EMUtils.swift"; sourceTree = "<group>"; };
 		405AC9011EBFF73A00E7227A /* AVCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureView.swift; sourceTree = "<group>"; };
 		405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureVisualEffectView.swift; sourceTree = "<group>"; };
 		405AC9191EC0209B00E7227A /* UIImage+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EMUtils.swift"; sourceTree = "<group>"; };
@@ -161,6 +168,7 @@
 		40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = "../3rd-party/AEXML/AEXML.xcodeproj"; sourceTree = "<group>"; };
 		40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40C9B9511E636B2700DC9ED8 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F8B6101F58C3DA0020F99B /* UUID+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+EMUtilsTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +301,7 @@
 				407D197A1CC23CE900C102D5 /* EnumerateTests.swift */,
 				407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */,
 				40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */,
+				40F8B6101F58C3DA0020F99B /* UUID+EMUtilsTests.swift */,
 				407D197C1CC23CFC00C102D5 /* Supporting Files */,
 			);
 			path = EMUtilsTests;
@@ -361,8 +370,10 @@
 		40C6F15A1EDFFE3100D64928 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */,
 				402037011F25674C005BC02B /* Dictionary+EMUtils.swift */,
 				402BA68F1EB1C01200E35176 /* String+EMUtils.swift */,
+				402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -621,10 +632,12 @@
 				40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */,
 				405AC91A1EC0209B00E7227A /* UIImage+EMUtils.swift in Sources */,
 				407D19881CC2BC2F00C102D5 /* NSDate+ISO8601.m in Sources */,
+				402F6AF61F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */,
 				407D19841CC2BBB100C102D5 /* NSDate+EMUtils.swift in Sources */,
 				40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */,
 				402037021F25674C005BC02B /* Dictionary+EMUtils.swift in Sources */,
 				40BF49A71CC1CA4400BF6D82 /* UIViewController+EMUtils.swift in Sources */,
+				402F6AFF1F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */,
 				407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */,
 				405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */,
 				40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */,
@@ -643,6 +656,7 @@
 				407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */,
 				40C6F1521EDFE25300D64928 /* String+EMUtilsTests.swift in Sources */,
 				4020370A1F256911005BC02B /* Dictionary+EMUtilsTests.swift in Sources */,
+				40F8B6111F58C3DA0020F99B /* UUID+EMUtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,7 +673,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402F6B001F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */,
 				40C6F1591EDFF90900D64928 /* String+EMUtils.swift in Sources */,
+				402F6AF71F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */,
 				4020370B1F256980005BC02B /* Dictionary+EMUtils.swift in Sources */,
 				40C004B41E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
 				40C004BF1E6AAEAE009CCFBA /* Enumerate.swift in Sources */,
