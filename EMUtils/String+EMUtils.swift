@@ -10,6 +10,12 @@ import Foundation
 
 
 public extension String {
+    public init(format: String, args: [Any]) {
+        let arguments = args.map { $0 as! CVarArg }
+        self.init(format: format, arguments: arguments)
+    }
+
+
     public var isNotWhitespace: Bool {
         return !trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
