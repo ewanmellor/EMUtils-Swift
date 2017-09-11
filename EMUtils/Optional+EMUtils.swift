@@ -19,3 +19,18 @@ public extension Optional where Wrapped: Collection {
         }
     }
 }
+
+
+public extension Optional where Wrapped: RangeReplaceableCollection {
+    public mutating func appendCreatingCollectionIfNecessary(_ newElement: Wrapped.Iterator.Element) {
+        var c: Wrapped
+        switch self {
+        case .some(let c_):
+            c = c_
+        case .none:
+            c = Wrapped()
+        }
+        c.append(newElement)
+        self = .some(c)
+    }
+}
