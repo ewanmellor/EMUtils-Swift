@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class Enumerate {
+public final class Enumerate {
 
     /**
      Call the given block with pairs taken from s1 and s2 in sequence.
@@ -18,13 +18,13 @@ public class Enumerate {
      run as long as the shorter one. The remaining items in the longer one
      will be ignored.
      */
-    public class func pairwise<S1, S2>(_ s1: S1, _ s2: S2, _ block: (S1.Iterator.Element, S2.Iterator.Element) -> Void) where S1: Sequence, S2: Sequence {
+    public static func pairwise<S1, S2>(_ s1: S1, _ s2: S2, _ block: (S1.Iterator.Element, S2.Iterator.Element) -> Void) where S1: Sequence, S2: Sequence {
         var i1 = s1.makeIterator()
         var i2 = s2.makeIterator()
         pairwiseIterator(&i1, &i2, block)
     }
 
-    public class func pairwiseIterator<I1, I2>(_ s1: inout I1, _ s2: inout I2, _ block: (I1.Element, I2.Element) -> Void) where I1: IteratorProtocol, I2: IteratorProtocol {
+    public static func pairwiseIterator<I1, I2>(_ s1: inout I1, _ s2: inout I2, _ block: (I1.Element, I2.Element) -> Void) where I1: IteratorProtocol, I2: IteratorProtocol {
         let _ = Enumerate.pairwiseIteratorWithResult(&s1, &s2, { (e1: I1.Element, e2: I2.Element) -> (Bool, Any?) in
             block(e1, e2)
             return (false, nil)
@@ -42,7 +42,7 @@ public class Enumerate {
      - returns: The result returned by the block at the end of the last
      iteration of the loop.
      */
-    public class func pairwiseWithResult<S1, S2, V>(_ s1: S1, _ s2: S2, _ block: (S1.Iterator.Element, S2.Iterator.Element) -> (Bool, V?)) -> V? where S1: Sequence, S2: Sequence {
+    public static func pairwiseWithResult<S1, S2, V>(_ s1: S1, _ s2: S2, _ block: (S1.Iterator.Element, S2.Iterator.Element) -> (Bool, V?)) -> V? where S1: Sequence, S2: Sequence {
         var i1 = s1.makeIterator()
         var i2 = s2.makeIterator()
         let result = pairwiseIteratorWithResult(&i1, &i2, { (e1: S1.Iterator.Element, e2: S2.Iterator.Element) -> (Bool, V?) in
@@ -51,7 +51,7 @@ public class Enumerate {
         return result
     }
 
-    public class func pairwiseIteratorWithResult<I1, I2, V>(_ i1: inout I1, _ i2: inout I2, _ block: (I1.Element, I2.Element) -> (Bool, V?)) -> V? where I1: IteratorProtocol, I2: IteratorProtocol {
+    public static func pairwiseIteratorWithResult<I1, I2, V>(_ i1: inout I1, _ i2: inout I2, _ block: (I1.Element, I2.Element) -> (Bool, V?)) -> V? where I1: IteratorProtocol, I2: IteratorProtocol {
         var result: V? = nil
 
         while let e1 = i1.next(), let e2 = i2.next() {
