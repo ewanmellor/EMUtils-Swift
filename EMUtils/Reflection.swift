@@ -44,9 +44,9 @@ private func reflectionGetPropertyNamesSingle(_ cls: AnyClass, _ result: inout [
     for _ in [0 ..< Int(outCount)] {
         let property = properties?.pointee
         properties = properties?.successor()
-        let propertyName = property_getName(property)
+        let propertyName = property_getName(property!)
         if propertyName != nil {
-            if let name = String(validatingUTF8: propertyName!) {
+            if let name = String(validatingUTF8: propertyName) {
                 if predicate == nil || propertyMatchesPredicate(property!, predicate!) {
                     result.append(name)
                 }
@@ -58,7 +58,7 @@ private func reflectionGetPropertyNamesSingle(_ cls: AnyClass, _ result: inout [
 
 
 private func propertyMatchesPredicate(_ property: objc_property_t, _ predicate: (String) -> Bool) -> Bool {
-    let attrs = String(cString: property_getAttributes(property))
+    let attrs = String(cString: property_getAttributes(property)!)
     return predicate(attrs)
 }
 
