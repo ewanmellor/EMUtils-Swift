@@ -45,11 +45,9 @@ private func reflectionGetPropertyNamesSingle(_ cls: AnyClass, _ result: inout [
         let property = properties?.pointee
         properties = properties?.successor()
         let propertyName = property_getName(property!)
-        if propertyName != nil {
-            if let name = String(validatingUTF8: propertyName) {
-                if predicate == nil || propertyMatchesPredicate(property!, predicate!) {
-                    result.append(name)
-                }
+        if let name = String(validatingUTF8: propertyName) {
+            if predicate == nil || propertyMatchesPredicate(property!, predicate!) {
+                result.append(name)
             }
         }
     }

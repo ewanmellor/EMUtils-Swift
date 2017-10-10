@@ -93,12 +93,12 @@ open class EMJUnitTestObserver: XCTestObserver {
 
 
     override open func testCaseDidStop(_ testRun: XCTestRun!) {
-        suiteLogs[testRun.test.name!] = [String]()
+        suiteLogs[testRun.test.name] = [String]()
     }
 
 
-    override open func testCaseDidFail(_ testRun: XCTestRun!, withDescription description: String!, inFile filePath: String!, atLine lineNumber: UInt) {
-        let name = testRun.test.name!
+    override open func testCaseDidFail(_ testRun: XCTestRun!, withDescription description: String!, inFile filePath: String!, atLine lineNumber: Int) {
+        let name = testRun.test.name
         suiteFailures![name] = description
         suiteFailureLocations[name] = "\(filePath):\(lineNumber)"
     }
@@ -132,7 +132,7 @@ private func testSuiteRunToXML(_ suiteRun: XCTestSuiteRun, failures: [String: St
     let result = AEXMLElement(name: "testsuite", value: nil, attributes: attrs)
 
     for testRun in suiteRun.testRuns {
-        let name = testRun.test.name!
+        let name = testRun.test.name
         let testRunEl = testRunToXML(testRun, failures?[name], failureLocations?[name], logs?[name])
         result.addChild(testRunEl)
     }
@@ -143,13 +143,13 @@ private func testSuiteRunToXML(_ suiteRun: XCTestSuiteRun, failures: [String: St
 
 private func testRunToXML(_ testRun: XCTestRun, _ failure: String?, _ failureLocation: String?, _ logs: [String]?) -> AEXMLElement {
 
-    let testName = testRun.test.name!
+    let testName = testRun.test.name
     let matches = testNameRE.matches(in: testName, options: [], range: NSMakeRange(0, testName.utf16.count))
 
     var bareTestName: String
     if matches.count > 0 {
         let match = matches[0]
-        bareTestName = (testName as NSString).substring(with: match.rangeAt(1))
+        bareTestName = (testName as NSString).substring(with: match.range(at: 1))
     }
     else {
         bareTestName = testName
@@ -194,7 +194,7 @@ private func failureToXML(_ msg: String?, _ location: String?) -> AEXMLElement? 
 
 private func testSuiteRunAttrs(_ run: XCTestRun) -> [String: String] {
     var attrs = [
-        "name": run.test.name!,
+        "name": run.test.name,
         "tests": String(run.testCaseCount),
         "errors": String(run.unexpectedExceptionCount),
         "failures": String(run.failureCount),

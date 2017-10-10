@@ -28,4 +28,15 @@ open class EMTestCaseBase: XCTestCase {
         super.setUp()
         continueAfterFailure = false
     }
+
+
+    public func assertIsNSError(_ error: Error, domain: String, code: Int) {
+        let error = error as NSError
+        XCTAssertEqual(error.domain, domain)
+        XCTAssertEqual(error.code, code)
+    }
+
+    public func assertIsNSError(_ error: Error, expectedError: NSError) {
+        assertIsNSError(error, domain: expectedError.domain, code: expectedError.code)
+    }
 }

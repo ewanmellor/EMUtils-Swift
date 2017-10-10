@@ -22,6 +22,14 @@
 		405AC9551EC067B500E7227A /* UIWindow+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9541EC067B500E7227A /* UIWindow+EMUtils.swift */; };
 		405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */; };
 		405BB1A91CCAC30A00736787 /* compile-colors.sh in Resources */ = {isa = PBXBuildFile; fileRef = 405BB1A81CCAC30A00736787 /* compile-colors.sh */; };
+		4072CB221F8CA8C60008BE2B /* EMTestCaseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19801CC2B78C00C102D5 /* EMTestCaseBase.swift */; };
+		4072CB231F8CA8C60008BE2B /* EMJUnitTestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */; };
+		4072CB2F1F8CAB370008BE2B /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C9B9511E636B2700DC9ED8 /* EMUtils.framework */; };
+		4072CB341F8CAC720008BE2B /* NSDate+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19831CC2BBB100C102D5 /* NSDate+EMUtils.swift */; };
+		4072CB351F8CAC870008BE2B /* NSDate+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D19851CC2BC2F00C102D5 /* NSDate+ISO8601.h */; };
+		4072CB361F8CAC8F0008BE2B /* NSDate+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 407D19861CC2BC2F00C102D5 /* NSDate+ISO8601.m */; };
+		4072CB371F8CACF60008BE2B /* CBLParseDate.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D198C1CC37E5200C102D5 /* CBLParseDate.c */; };
+		4072CB381F8CACFA0008BE2B /* CBLParseDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198D1CC37E5200C102D5 /* CBLParseDate.h */; };
 		407D19751CC2322400C102D5 /* Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19741CC2322400C102D5 /* Enumerate.swift */; };
 		407D19761CC23C8000C102D5 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
 		407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D197A1CC23CE900C102D5 /* EnumerateTests.swift */; };
@@ -52,6 +60,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4072CB301F8CAC370008BE2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4A92891BDD49390011F36F;
+			remoteInfo = "AEXML OSX";
+		};
+		4072CB321F8CAC3B0008BE2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40BF49731CC1C77800BF6D82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C9B9501E636B2700DC9ED8;
+			remoteInfo = "EMUtils macOS";
+		};
 		407D19771CC23C8A00C102D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 40BF49731CC1C77800BF6D82 /* Project object */;
@@ -143,6 +165,7 @@
 		405AC9541EC067B500E7227A /* UIWindow+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+EMUtils.swift"; sourceTree = "<group>"; };
 		405BB1991CCAB0F800736787 /* UITableViewCell+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+EMUtils.swift"; sourceTree = "<group>"; };
 		405BB1A81CCAC30A00736787 /* compile-colors.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "compile-colors.sh"; sourceTree = "<group>"; };
+		4072CB2B1F8CA8C60008BE2B /* EMUtilsTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtilsTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		407D19741CC2322400C102D5 /* Enumerate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerate.swift; sourceTree = "<group>"; };
 		407D19791CC23CE900C102D5 /* EMUtilsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMUtilsTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		407D197A1CC23CE900C102D5 /* EnumerateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumerateTests.swift; sourceTree = "<group>"; };
@@ -175,6 +198,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4072CB241F8CA8C60008BE2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4072CB2F1F8CAB370008BE2B /* EMUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40BF49781CC1C77800BF6D82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +307,7 @@
 				40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */,
 				40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */,
 				40C9B9511E636B2700DC9ED8 /* EMUtils.framework */,
+				4072CB2B1F8CA8C60008BE2B /* EMUtilsTestBase.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -385,6 +417,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4072CB261F8CA8C60008BE2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40BF49791CC1C77800BF6D82 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,12 +445,34 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4072CB381F8CACFA0008BE2B /* CBLParseDate.h in Headers */,
+				4072CB351F8CAC870008BE2B /* NSDate+ISO8601.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4072CB1C1F8CA8C60008BE2B /* EMUtilsTestBase macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4072CB281F8CA8C60008BE2B /* Build configuration list for PBXNativeTarget "EMUtilsTestBase macOS" */;
+			buildPhases = (
+				4072CB211F8CA8C60008BE2B /* Sources */,
+				4072CB241F8CA8C60008BE2B /* Frameworks */,
+				4072CB261F8CA8C60008BE2B /* Headers */,
+				4072CB271F8CA8C60008BE2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4072CB311F8CAC370008BE2B /* PBXTargetDependency */,
+				4072CB331F8CAC3B0008BE2B /* PBXTargetDependency */,
+			);
+			name = "EMUtilsTestBase macOS";
+			productName = EMUtilsTestBase;
+			productReference = 4072CB2B1F8CA8C60008BE2B /* EMUtilsTestBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		40BF497B1CC1C77800BF6D82 /* EMUtils iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40BF49901CC1C77900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtils iOS" */;
@@ -449,9 +510,9 @@
 			productReference = 40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase */ = {
+		40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40BF49C41CC1CE3900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtilsTestBase" */;
+			buildConfigurationList = 40BF49C41CC1CE3900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtilsTestBase iOS" */;
 			buildPhases = (
 				40BF49BA1CC1CE3900BF6D82 /* Sources */,
 				40BF49BB1CC1CE3900BF6D82 /* Frameworks */,
@@ -464,7 +525,7 @@
 				40C100001E63A2AB00AFF3FD /* PBXTargetDependency */,
 				407D19781CC23C8A00C102D5 /* PBXTargetDependency */,
 			);
-			name = EMUtilsTestBase;
+			name = "EMUtilsTestBase iOS";
 			productName = EMUtilsTestBase;
 			productReference = 40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */;
 			productType = "com.apple.product-type.framework";
@@ -499,15 +560,15 @@
 				TargetAttributes = {
 					40BF497B1CC1C77800BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 					};
 					40BF49851CC1C77900BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 					};
 					40BF49BE1CC1CE3900BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 					};
 					40C9B9501E636B2700DC9ED8 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -537,7 +598,8 @@
 			targets = (
 				40BF497B1CC1C77800BF6D82 /* EMUtils iOS */,
 				40C9B9501E636B2700DC9ED8 /* EMUtils macOS */,
-				40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase */,
+				40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase iOS */,
+				4072CB1C1F8CA8C60008BE2B /* EMUtilsTestBase macOS */,
 				40BF49851CC1C77900BF6D82 /* EMUtilsTests */,
 			);
 		};
@@ -596,6 +658,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4072CB271F8CA8C60008BE2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40BF497A1CC1C77800BF6D82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -628,6 +697,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4072CB211F8CA8C60008BE2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4072CB221F8CA8C60008BE2B /* EMTestCaseBase.swift in Sources */,
+				4072CB231F8CA8C60008BE2B /* EMJUnitTestObserver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40BF49771CC1C77800BF6D82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -684,9 +762,12 @@
 				402F6AF71F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */,
 				4020370B1F256980005BC02B /* Dictionary+EMUtils.swift in Sources */,
 				40C004B41E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
+				4072CB371F8CACF60008BE2B /* CBLParseDate.c in Sources */,
 				40C004BF1E6AAEAE009CCFBA /* Enumerate.swift in Sources */,
+				4072CB341F8CAC720008BE2B /* NSDate+EMUtils.swift in Sources */,
 				40F8B6241F59F5EB0020F99B /* Optional+EMUtils.swift in Sources */,
 				40C004C61E6AAEB2009CCFBA /* Reflection.swift in Sources */,
+				4072CB361F8CAC8F0008BE2B /* NSDate+ISO8601.m in Sources */,
 				40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,6 +775,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4072CB311F8CAC370008BE2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AEXML OSX";
+			targetProxy = 4072CB301F8CAC370008BE2B /* PBXContainerItemProxy */;
+		};
+		4072CB331F8CAC3B0008BE2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40C9B9501E636B2700DC9ED8 /* EMUtils macOS */;
+			targetProxy = 4072CB321F8CAC3B0008BE2B /* PBXContainerItemProxy */;
+		};
 		407D19781CC23C8A00C102D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 40BF497B1CC1C77800BF6D82 /* EMUtils iOS */;
@@ -701,7 +792,7 @@
 		};
 		407D197F1CC2B73200C102D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase */;
+			target = 40BF49BE1CC1CE3900BF6D82 /* EMUtilsTestBase iOS */;
 			targetProxy = 407D197E1CC2B73200C102D5 /* PBXContainerItemProxy */;
 		};
 		40BF49891CC1C77900BF6D82 /* PBXTargetDependency */ = {
@@ -717,6 +808,50 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4072CB291F8CA8C60008BE2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n",
+				);
+				INFOPLIST_FILE = EMUtilsTestBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
+				PRODUCT_NAME = EMUtilsTestBase;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4072CB2A1F8CA8C60008BE2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n\n$(PLATFORM_DIR)/Developer/Library/Frameworks\n",
+				);
+				INFOPLIST_FILE = EMUtilsTestBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
+				PRODUCT_NAME = EMUtilsTestBase;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		40BF498E1CC1C77900BF6D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -763,8 +898,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -815,8 +950,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -844,7 +979,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -864,7 +999,7 @@
 				PRODUCT_NAME = EMUtils;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -878,7 +1013,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtilsTests/EMUtilsTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -891,7 +1026,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtilsTests/EMUtilsTests-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -910,9 +1045,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EMUtilsTestBase;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -931,9 +1066,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = EMUtilsTestBase;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -952,12 +1087,12 @@
 				INFOPLIST_FILE = EMUtils.framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtils;
 				PRODUCT_NAME = EMUtils;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -977,11 +1112,11 @@
 				INFOPLIST_FILE = EMUtils.framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtils;
 				PRODUCT_NAME = EMUtils;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -989,6 +1124,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4072CB281F8CA8C60008BE2B /* Build configuration list for PBXNativeTarget "EMUtilsTestBase macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4072CB291F8CA8C60008BE2B /* Debug */,
+				4072CB2A1F8CA8C60008BE2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		40BF49761CC1C77800BF6D82 /* Build configuration list for PBXProject "EMUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1016,7 +1160,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40BF49C41CC1CE3900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtilsTestBase" */ = {
+		40BF49C41CC1CE3900BF6D82 /* Build configuration list for PBXNativeTarget "EMUtilsTestBase iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40BF49C51CC1CE3900BF6D82 /* Debug */,
