@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "40BF49BE1CC1CE3900BF6D82"
-               BuildableName = "EMUtilsTestBase iOS.framework"
+               BuildableName = "EMUtilsTestBase.framework"
                BlueprintName = "EMUtilsTestBase iOS"
                ReferencedContainer = "container:../uum/EMUtils-Swift/EMUtils.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40BF49BE1CC1CE3900BF6D82"
-            BuildableName = "EMUtilsTestBase iOS.framework"
+            BuildableName = "EMUtilsTestBase.framework"
             BlueprintName = "EMUtilsTestBase iOS"
             ReferencedContainer = "container:../uum/EMUtils-Swift/EMUtils.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40BF49BE1CC1CE3900BF6D82"
-            BuildableName = "EMUtilsTestBase iOS.framework"
+            BuildableName = "EMUtilsTestBase.framework"
             BlueprintName = "EMUtilsTestBase iOS"
             ReferencedContainer = "container:../uum/EMUtils-Swift/EMUtils.xcodeproj">
          </BuildableReference>
