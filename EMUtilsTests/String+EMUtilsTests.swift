@@ -12,7 +12,86 @@ import XCTest
 
 
 class String_EMUtilsTests: XCTestCase {
-    
+    func testStringByStrippingQuotesSimple() {
+        let input = "Ewan Mellor"
+        let expected = "Ewan Mellor"
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesSimpleSingleQuoted() {
+        let input = "'Ewan Mellor'"
+        let expected = "Ewan Mellor"
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesSimpleDoubleQuoted() {
+        let input = "\"Ewan Mellor\""
+        let expected = "Ewan Mellor"
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesApostrophe() {
+        let input = "Barry O'Rourke"
+        let expected = "Barry O'Rourke"
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesApostropheDoubleQuoted() {
+        let input = "\"Barry O'Rourke\""
+        let expected = "Barry O'Rourke"
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesApostropheSingleQuoted() {
+        let input = "'Barry O'Rourke'"
+        let expected = "Barry O'Rourke"
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesEmpty() {
+        let input = ""
+        let expected = ""
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesJustQuotes() {
+        let input = "'\"''\"'"
+        let expected = "\"''\""
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesWhitespace() {
+        let input = "   "
+        let expected = ""
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
+    func testStringByStrippingQuotesWhitespaceInQuotes() {
+        let input = "' Ewan Mellor  '"
+        let expected = " Ewan Mellor  "
+        let result = input.strippingQuotes()
+
+        XCTAssertEqual(expected, result)
+    }
+
     func testUnindented() {
         XCTAssertEqual("".unindented(), "")
         XCTAssertEqual("   ".unindented(), "")
