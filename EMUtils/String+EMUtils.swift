@@ -33,6 +33,11 @@ public extension String {
         return NSRange(startIndex..<endIndex, in: self)
     }
 
+    public var stringForDoubleQuotes: String {
+        return replacingOccurrences(of: "\\", with: "\\\\")
+            .replacingOccurrences(of: "\"", with: "\\\"")
+    }
+
     private func substring(with nsrange: NSRange) -> String? {
         guard let range = Range(nsrange, in: self) else {
             return nil
