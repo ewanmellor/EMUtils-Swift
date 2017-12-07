@@ -61,7 +61,7 @@ public struct InlineTiming {
             return
         }
 
-        let fun = String(fun_.split(separator: "(")[0])
+        let fun = String(fun_.split(separator: "(", maxSplits: 1)[0])
 
         let well_over_budget = (budget > 0.0 && total_time > (10.0 * budget))
         let well_over_str = well_over_budget ? "⚡" : "  "
