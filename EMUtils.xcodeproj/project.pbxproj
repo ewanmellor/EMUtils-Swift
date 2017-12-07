@@ -18,6 +18,10 @@
 		402F6AF71F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */; };
 		402F6AFF1F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */; };
 		402F6B001F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */; };
+		404769EA1FD9DF95004E157D /* LoggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E31FD9DF95004E157D /* LoggingMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404769EB1FD9DF95004E157D /* LoggingMacrosWrappers.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404769EC1FD9DFA4004E157D /* LoggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E31FD9DF95004E157D /* LoggingMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404769ED1FD9DFB2004E157D /* LoggingMacrosWrappers.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9011EBFF73A00E7227A /* AVCaptureView.swift */; };
 		405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */; };
 		405AC9171EC01A2400E7227A /* EMUtils-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198A1CC2BDA600C102D5 /* EMUtils-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -166,6 +170,8 @@
 		402BA68F1EB1C01200E35176 /* String+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EMUtils.swift"; sourceTree = "<group>"; };
 		402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+EMUtils.swift"; sourceTree = "<group>"; };
 		402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+EMUtils.swift"; sourceTree = "<group>"; };
+		404769E31FD9DF95004E157D /* LoggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingMacros.h; sourceTree = "<group>"; };
+		404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingMacrosWrappers.h; sourceTree = "<group>"; };
 		405AC9011EBFF73A00E7227A /* AVCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureView.swift; sourceTree = "<group>"; };
 		405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureVisualEffectView.swift; sourceTree = "<group>"; };
 		405AC9191EC0209B00E7227A /* UIImage+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EMUtils.swift"; sourceTree = "<group>"; };
@@ -330,6 +336,8 @@
 				40BF49A11CC1C9E100BF6D82 /* UI* */,
 				407D19741CC2322400C102D5 /* Enumerate.swift */,
 				40EFACB91FB3996F00AF135B /* InlineTiming.swift */,
+				404769E31FD9DF95004E157D /* LoggingMacros.h */,
+				404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */,
 				40BF49981CC1C7F100BF6D82 /* Reflection.swift */,
 				4006B8D21F97FBBF0083D67B /* StreamPair.swift */,
 				40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */,
@@ -440,7 +448,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				407D198F1CC37E5200C102D5 /* CBLParseDate.h in Headers */,
+				404769EA1FD9DF95004E157D /* LoggingMacros.h in Headers */,
 				407D19871CC2BC2F00C102D5 /* NSDate+ISO8601.h in Headers */,
+				404769EB1FD9DF95004E157D /* LoggingMacrosWrappers.h in Headers */,
 				405AC9171EC01A2400E7227A /* EMUtils-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +467,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4072CB381F8CACFA0008BE2B /* CBLParseDate.h in Headers */,
+				404769ED1FD9DFB2004E157D /* LoggingMacrosWrappers.h in Headers */,
+				404769EC1FD9DFA4004E157D /* LoggingMacros.h in Headers */,
 				4072CB351F8CAC870008BE2B /* NSDate+ISO8601.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
