@@ -22,6 +22,8 @@
 		404769EB1FD9DF95004E157D /* LoggingMacrosWrappers.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		404769EC1FD9DFA4004E157D /* LoggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E31FD9DF95004E157D /* LoggingMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		404769ED1FD9DFB2004E157D /* LoggingMacrosWrappers.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404769FA1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */; };
+		404769FB1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */; };
 		405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC9011EBFF73A00E7227A /* AVCaptureView.swift */; };
 		405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */; };
 		405AC9171EC01A2400E7227A /* EMUtils-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198A1CC2BDA600C102D5 /* EMUtils-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -172,6 +174,7 @@
 		402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+EMUtils.swift"; sourceTree = "<group>"; };
 		404769E31FD9DF95004E157D /* LoggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingMacros.h; sourceTree = "<group>"; };
 		404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingMacrosWrappers.h; sourceTree = "<group>"; };
+		404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileHandle+EMUtils.swift"; sourceTree = "<group>"; };
 		405AC9011EBFF73A00E7227A /* AVCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureView.swift; sourceTree = "<group>"; };
 		405AC90C1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureVisualEffectView.swift; sourceTree = "<group>"; };
 		405AC9191EC0209B00E7227A /* UIImage+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EMUtils.swift"; sourceTree = "<group>"; };
@@ -426,6 +429,7 @@
 			children = (
 				402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */,
 				402037011F25674C005BC02B /* Dictionary+EMUtils.swift */,
+				404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */,
 				40F8B6221F59F5EB0020F99B /* Optional+EMUtils.swift */,
 				402BA68F1EB1C01200E35176 /* String+EMUtils.swift */,
 				402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */,
@@ -738,6 +742,7 @@
 				40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */,
 				405AC91A1EC0209B00E7227A /* UIImage+EMUtils.swift in Sources */,
 				407D19881CC2BC2F00C102D5 /* NSDate+ISO8601.m in Sources */,
+				404769FA1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */,
 				402F6AF61F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */,
 				40F8B6231F59F5EB0020F99B /* Optional+EMUtils.swift in Sources */,
 				407D19841CC2BBB100C102D5 /* NSDate+EMUtils.swift in Sources */,
@@ -795,6 +800,7 @@
 				40F8B6241F59F5EB0020F99B /* Optional+EMUtils.swift in Sources */,
 				40C004C61E6AAEB2009CCFBA /* Reflection.swift in Sources */,
 				4072CB361F8CAC8F0008BE2B /* NSDate+ISO8601.m in Sources */,
+				404769FB1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */,
 				4006B8D41F97FBBF0083D67B /* StreamPair.swift in Sources */,
 				40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */,
 			);
