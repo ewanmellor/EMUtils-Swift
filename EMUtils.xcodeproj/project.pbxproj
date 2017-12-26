@@ -206,7 +206,7 @@
 		40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtilsTestBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C004B21E6AAE0E009CCFBA /* UnownedWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnownedWrapper.swift; sourceTree = "<group>"; };
 		40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakWrapper.swift; sourceTree = "<group>"; };
-		40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = "../3rd-party/AEXML/AEXML.xcodeproj"; sourceTree = "<group>"; };
+		40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = "../AEXML/AEXML.xcodeproj"; sourceTree = "<group>"; };
 		40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40C9B9511E636B2700DC9ED8 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EFACB91FB3996F00AF135B /* InlineTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTiming.swift; sourceTree = "<group>"; };
