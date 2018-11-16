@@ -13,7 +13,7 @@ public extension UUID {
     public var UUIDStringBase64url: String {
         let bytes = UnsafeMutablePointer<UInt8>.allocate(capacity: 16)
         defer {
-            bytes.deallocate(capacity: 16)
+            bytes.deallocate()
         }
         (self as NSUUID).getBytes(bytes)
         let data = Data(bytesNoCopy: bytes, count: 16, deallocator: .none)
