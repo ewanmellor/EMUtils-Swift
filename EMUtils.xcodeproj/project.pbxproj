@@ -63,6 +63,7 @@
 		40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C1FFE41E639E7300AFF3FD /* WeakWrapper.swift */; };
 		40C6F1521EDFE25300D64928 /* String+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */; };
 		40C6F1591EDFF90900D64928 /* String+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+EMUtils.swift */; };
+		40CC28EE219F8212007E4B34 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C1FFFC1E63A29300AFF3FD /* AEXML.framework */; };
 		40EFACBA1FB3996F00AF135B /* InlineTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EFACB91FB3996F00AF135B /* InlineTiming.swift */; };
 		40EFACC01FB3997600AF135B /* InlineTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EFACB91FB3996F00AF135B /* InlineTiming.swift */; };
 		40F8B6111F58C3DA0020F99B /* UUID+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8B6101F58C3DA0020F99B /* UUID+EMUtilsTests.swift */; };
@@ -219,6 +220,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40CC28EE219F8212007E4B34 /* AEXML.framework in Frameworks */,
 				4072CB2F1F8CAB370008BE2B /* EMUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +316,7 @@
 				40BF49A01CC1C87900BF6D82 /* EMUtils.framework */,
 				40BF49AE1CC1CB6500BF6D82 /* EMUtilsTestBase.framework */,
 				40BF497D1CC1C77800BF6D82 /* Products */,
+				40CC28ED219F8212007E4B34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -419,7 +422,7 @@
 				40C1FFF81E63A29300AFF3FD /* AEXML.framework */,
 				40C1FFFA1E63A29300AFF3FD /* AEXML tvOS Tests.xctest */,
 				40C1FFFC1E63A29300AFF3FD /* AEXML.framework */,
-				40C1FFFE1E63A29300AFF3FD /* AEXML OSX Tests.xctest */,
+				40C1FFFE1E63A29300AFF3FD /* AEXML macOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -435,6 +438,13 @@
 				402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */,
 			);
 			name = Foundation;
+			sourceTree = "<group>";
+		};
+		40CC28ED219F8212007E4B34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -585,6 +595,9 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ewan Mellor";
 				TargetAttributes = {
+					4072CB1C1F8CA8C60008BE2B = {
+						LastSwiftMigration = 1010;
+					};
 					40BF497B1CC1C77800BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0900;
@@ -600,7 +613,7 @@
 					40C9B9501E636B2700DC9ED8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7MM34246C9;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -675,10 +688,10 @@
 			remoteRef = 40C1FFFB1E63A29300AFF3FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		40C1FFFE1E63A29300AFF3FD /* AEXML OSX Tests.xctest */ = {
+		40C1FFFE1E63A29300AFF3FD /* AEXML macOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "AEXML OSX Tests.xctest";
+			path = "AEXML macOS Tests.xctest";
 			remoteRef = 40C1FFFD1E63A29300AFF3FD /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -860,7 +873,7 @@
 				PRODUCT_NAME = EMUtilsTestBase;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -882,7 +895,7 @@
 				PRODUCT_NAME = EMUtilsTestBase;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1131,7 +1144,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1155,7 +1168,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

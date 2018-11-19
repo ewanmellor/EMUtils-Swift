@@ -196,11 +196,11 @@ public final class StreamPairInputStream : InputStream {
         return false
     }
 
-    public override func schedule(in aRunLoop: RunLoop, forMode mode: RunLoopMode) {
+    public override func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode) {
         fatalError("Not implemented")
     }
 
-    public override func remove(from aRunLoop: RunLoop, forMode mode: RunLoopMode) {
+    public override func remove(from aRunLoop: RunLoop, forMode mode: RunLoop.Mode) {
         fatalError("Not implemented")
     }
 }
@@ -246,9 +246,9 @@ public final class StreamPairOutputStream : OutputStream {
         }
     }
 
-    public override func schedule(in aRunLoop: RunLoop, forMode mode: RunLoopMode) {
+    public override func schedule(in aRunLoop: RunLoop, forMode mode: RunLoop.Mode) {
     }
 
-    public override func remove(from aRunLoop: RunLoop, forMode mode: RunLoopMode) {
+    public override func remove(from aRunLoop: RunLoop, forMode mode: RunLoop.Mode) {
     }
 }

@@ -100,7 +100,7 @@ open class EMJUnitTestObserver: XCTestObserver {
     override open func testCaseDidFail(_ testRun: XCTestRun!, withDescription description: String!, inFile filePath: String!, atLine lineNumber: Int) {
         let name = testRun.test.name
         suiteFailures![name] = description
-        suiteFailureLocations[name] = "\(filePath):\(lineNumber)"
+        suiteFailureLocations[name] = "\(filePath ?? "unknown"):\(lineNumber)"
     }
 
 
