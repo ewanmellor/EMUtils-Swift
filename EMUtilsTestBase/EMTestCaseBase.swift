@@ -40,3 +40,18 @@ open class EMTestCaseBase: XCTestCase {
         assertIsNSError(error, domain: expectedError.domain, code: expectedError.code)
     }
 }
+
+
+public func XCTAssertIdentical<T: AnyObject>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) rethrows {
+    let val1 = try expression1()
+    let val2 = try expression2()
+    XCTAssert(val1 === val2, {
+        let result = message()
+        if result == "" {
+            return "(\"\(val1)\") is not identical to (\"\(val2)\")"
+        }
+        else {
+            return result
+        }
+    }(), file: file, line: line)
+}
