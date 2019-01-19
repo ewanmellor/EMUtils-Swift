@@ -55,3 +55,34 @@ public func XCTAssertIdentical<T: AnyObject>(_ expression1: @autoclosure () thro
         }
     }(), file: file, line: line)
 }
+
+
+public func XCTAssertIs<T: AnyObject>(_ expression1: @autoclosure () throws -> AnyObject, _ expression2: @autoclosure () throws -> T.Type, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) rethrows {
+    let val = try expression1()
+    let expectedType = try expression2()
+    XCTAssert(type(of: val as Any) == expectedType, {
+        let result = message()
+        if result == "" {
+            return "(\"\(val)\") is not a (\"\(expectedType)\")"
+        }
+        else {
+            return result
+        }
+    }(), file: file, line: line)
+}
+
+
+public func XCTAssertIs<T: AnyObject>(_ expression1: @autoclosure () throws -> AnyObject?, _ expression2: @autoclosure () throws -> T.Type, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) rethrows {
+    let val = try expression1()
+    let expectedType = try expression2()
+    XCTAssertNotNil(val, {
+        let result = message()
+        if result == "" {
+            return "Value is nil, not a (\"\(expectedType)\")"
+        }
+        else {
+            return result
+        }
+    }(), file: file, line: line)
+    XCTAssertIs(val!, expectedType, message, file: file, line: line)
+}
