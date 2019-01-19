@@ -64,6 +64,8 @@
 		40C6F1521EDFE25300D64928 /* String+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */; };
 		40C6F1591EDFF90900D64928 /* String+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+EMUtils.swift */; };
 		40CC28EE219F8212007E4B34 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C1FFFC1E63A29300AFF3FD /* AEXML.framework */; };
+		40CF9AEC21E48BA20030544B /* Array+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */; };
+		40CF9AED21E48BA20030544B /* Array+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */; };
 		40EFACBA1FB3996F00AF135B /* InlineTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EFACB91FB3996F00AF135B /* InlineTiming.swift */; };
 		40EFACC01FB3997600AF135B /* InlineTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EFACB91FB3996F00AF135B /* InlineTiming.swift */; };
 		40F8B6111F58C3DA0020F99B /* UUID+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F8B6101F58C3DA0020F99B /* UUID+EMUtilsTests.swift */; };
@@ -210,6 +212,7 @@
 		40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = ../AEXML/AEXML.xcodeproj; sourceTree = "<group>"; };
 		40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40C9B9511E636B2700DC9ED8 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EMUtils.swift"; sourceTree = "<group>"; };
 		40EFACB91FB3996F00AF135B /* InlineTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTiming.swift; sourceTree = "<group>"; };
 		40F8B6101F58C3DA0020F99B /* UUID+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40F8B6221F59F5EB0020F99B /* Optional+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+EMUtils.swift"; sourceTree = "<group>"; };
@@ -430,6 +433,7 @@
 		40C6F15A1EDFFE3100D64928 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */,
 				402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */,
 				402037011F25674C005BC02B /* Dictionary+EMUtils.swift */,
 				404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */,
@@ -767,6 +771,7 @@
 				405AC9021EBFF73A00E7227A /* AVCaptureView.swift in Sources */,
 				40EFACBA1FB3996F00AF135B /* InlineTiming.swift in Sources */,
 				40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */,
+				40CF9AEC21E48BA20030544B /* Array+EMUtils.swift in Sources */,
 				40C004B31E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
 				405AC9551EC067B500E7227A /* UIWindow+EMUtils.swift in Sources */,
 				405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */,
@@ -812,6 +817,7 @@
 				4072CB341F8CAC720008BE2B /* NSDate+EMUtils.swift in Sources */,
 				40F8B6241F59F5EB0020F99B /* Optional+EMUtils.swift in Sources */,
 				40C004C61E6AAEB2009CCFBA /* Reflection.swift in Sources */,
+				40CF9AED21E48BA20030544B /* Array+EMUtils.swift in Sources */,
 				4072CB361F8CAC8F0008BE2B /* NSDate+ISO8601.m in Sources */,
 				404769FB1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */,
 				4006B8D41F97FBBF0083D67B /* StreamPair.swift in Sources */,
