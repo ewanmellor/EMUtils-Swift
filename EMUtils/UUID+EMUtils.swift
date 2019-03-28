@@ -10,7 +10,7 @@ import Foundation
 
 
 public extension UUID {
-    public var UUIDStringBase64url: String {
+    var UUIDStringBase64url: String {
         let bytes = UnsafeMutablePointer<UInt8>.allocate(capacity: 16)
         defer {
             bytes.deallocate()
@@ -21,18 +21,13 @@ public extension UUID {
     }
 
 
-    public init?(base64urlEncoded base64urlString: String) {
-        guard let data = Data(base64urlEncoded: base64urlString) else {
+    init?(base64urlEncoded base64urlString: String) {
+        guard let data = Data(base64urlEncoded: base64urlString), data.count == 16 else {
             return nil
         }
-
-        var u: NSUUID?
-        data.withUnsafeBytes {
-            u = NSUUID(uuidBytes: $0)
+        let u = data.withUnsafeBytes {
+            return NSUUID(uuidBytes: $0.bindMemory(to: UInt8.self).baseAddress)
         }
-        guard let u_ = u else {
-            return nil
-        }
-        self.init(uuidString: u_.uuidString)
+        self.init(uuidString: u.uuidString)
     }
 }

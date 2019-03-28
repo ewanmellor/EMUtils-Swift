@@ -10,7 +10,7 @@ import Foundation
 
 
 public extension Optional where Wrapped: Collection {
-    public var isNilOrEmpty: Bool {
+    var isNilOrEmpty: Bool {
         switch self {
         case .some(let c):
             return c.isEmpty
@@ -22,7 +22,7 @@ public extension Optional where Wrapped: Collection {
 
 
 public extension Optional where Wrapped: RangeReplaceableCollection {
-    public mutating func appendCreatingCollectionIfNecessary(_ newElement: Wrapped.Iterator.Element) {
+    mutating func appendCreatingCollectionIfNecessary(_ newElement: Wrapped.Iterator.Element) {
         var c: Wrapped
         switch self {
         case .some(let c_):

@@ -10,7 +10,7 @@ import Foundation
 
 
 public extension Data {
-    public init?(base64urlEncoded base64urlString: String) {
+    init?(base64urlEncoded base64urlString: String) {
         var str = base64urlString
             .replacingOccurrences(of: "-", with: "+")
             .replacingOccurrences(of: "_", with: "/")
@@ -35,7 +35,7 @@ public extension Data {
     /**
      RFC 4648's base64url encoding.
      */
-    public var base64urlEncodedString: String {
+    var base64urlEncodedString: String {
         return base64EncodedString()
             .replacingOccurrences(of: "+", with: "-")
             .replacingOccurrences(of: "/", with: "_")

@@ -19,13 +19,13 @@ fileprivate let unindentRE = {
 
 
 public extension String {
-    public init(format: String, args: [Any]) {
+    init(format: String, args: [Any]) {
         let arguments = args.map { $0 as! CVarArg }
         self.init(format: format, arguments: arguments)
     }
 
 
-    public var isNotWhitespace: Bool {
+    var isNotWhitespace: Bool {
         return !trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 
@@ -33,7 +33,7 @@ public extension String {
         return NSRange(startIndex..<endIndex, in: self)
     }
 
-    public var stringForDoubleQuotes: String {
+    var stringForDoubleQuotes: String {
         return replacingOccurrences(of: "\\", with: "\\\\")
             .replacingOccurrences(of: "\"", with: "\\\"")
     }
@@ -45,7 +45,7 @@ public extension String {
         return String(self[range])
     }
 
-    public func strippingQuotes() -> String {
+    func strippingQuotes() -> String {
         if !isNotWhitespace {
             return ""
         }
@@ -56,11 +56,11 @@ public extension String {
         return (matchRange == wholeRange ? self : substring(with: matchRange)!)
     }
 
-    public func trim() -> String {
+    func trim() -> String {
        return trimmingCharacters(in: .whitespacesAndNewlines)
     }
 
-    public func unindented() -> String {
+    func unindented() -> String {
         return unindentRE.stringByReplacingMatches(in: self, options: [], range: nsRange, withTemplate: "")
     }
 }

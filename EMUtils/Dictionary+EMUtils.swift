@@ -10,14 +10,14 @@ import Foundation
 
 
 public extension Dictionary {
-    public init(elements: [(Key, Value)]) {
+    init(elements: [(Key, Value)]) {
         self.init()
         elements.forEach {
             self[$0.0] = $0.1
         }
     }
 
-    public static func +=(lhs: inout [Key: Value], rhs: [Key: Value]) {
+    static func +=(lhs: inout [Key: Value], rhs: [Key: Value]) {
         rhs.forEach {
             lhs[$0] = $1
         }

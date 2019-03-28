@@ -10,7 +10,7 @@ import Foundation
 
 
 public extension Array where Element: Hashable {
-    public func minus(_ toRemove: [Element]) -> [Element] {
+    func minus(_ toRemove: [Element]) -> [Element] {
         let toRemoveSet = Set(toRemove)
         return filter { !toRemoveSet.contains($0) }
     }

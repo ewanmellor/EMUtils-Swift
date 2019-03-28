@@ -19,23 +19,23 @@ public extension Date {
     }
 
 
-    public var iso8601String_16: String {
+    var iso8601String_16: String {
         return (self as NSDate).em_iso8601String_16()
     }
 
-    public var iso8601String_19: String {
+    var iso8601String_19: String {
         return (self as NSDate).em_iso8601String_19()
     }
 
-    public var iso8601String_23: String {
+    var iso8601String_23: String {
         return (self as NSDate).em_iso8601String_23()
     }
 
-    public var iso8601String_local_23: String {
+    var iso8601String_local_23: String {
         return (self as NSDate).em_iso8601String_local_23()
     }
 
-    public var iso8601String_24: String {
+    var iso8601String_24: String {
         return (self as NSDate).em_iso8601String_24()
     }
 }

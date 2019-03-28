@@ -36,7 +36,7 @@ public final class WeakWrapperHashable<T>: Hashable where T: AnyObject, T: Hasha
         _hash = value.hashValue
     }
 
-    public var hashValue: Int {
-        return _hash
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(_hash)
     }
 }
