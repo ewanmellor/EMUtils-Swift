@@ -84,5 +84,5 @@ public func XCTAssertIs<T: AnyObject>(_ expression1: @autoclosure () throws -> A
             return result
         }
     }(), file: file, line: line)
-    XCTAssertIs(val!, expectedType, message, file: file, line: line)
+    XCTAssertIs(val!, expectedType, message(), file: file, line: line)
 }

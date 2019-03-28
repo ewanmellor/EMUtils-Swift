@@ -600,7 +600,7 @@
 				ORGANIZATIONNAME = "Ewan Mellor";
 				TargetAttributes = {
 					4072CB1C1F8CA8C60008BE2B = {
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					40BF497B1CC1C77800BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
@@ -617,7 +617,7 @@
 					40C9B9501E636B2700DC9ED8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7MM34246C9;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -627,6 +627,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 40BF49721CC1C77800BF6D82;
@@ -879,7 +880,7 @@
 				PRODUCT_NAME = EMUtilsTestBase;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -901,7 +902,7 @@
 				PRODUCT_NAME = EMUtilsTestBase;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1150,7 +1151,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1174,7 +1175,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
