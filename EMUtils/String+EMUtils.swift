@@ -38,6 +38,10 @@ public extension String {
             .replacingOccurrences(of: "\"", with: "\\\"")
     }
 
+    func containsAny(_ characterSet: CharacterSet) -> Bool {
+        return rangeOfCharacter(from: characterSet) != nil
+    }
+
     private func substring(with nsrange: NSRange) -> String? {
         guard let range = Range(nsrange, in: self) else {
             return nil
