@@ -26,7 +26,7 @@ public extension String {
 
 
     var isNotWhitespace: Bool {
-        return !trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        return !trim().isEmpty
     }
 
     private var nsRange: NSRange {
