@@ -10,17 +10,17 @@ import UIKit
 
 
 public extension UITableViewCell {
-    public class var cellIdentifier: String {
+    class var cellIdentifier: String {
         return NSStringFromClass(self)
     }
 
-    public class func registerNibOnTableView(_ tableView: UITableView) {
+    class func registerNibOnTableView(_ tableView: UITableView) {
         let cellId = cellIdentifier
         let nib = UINib(nibName: cellId, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: cellId)
     }
 
-    public class func dequeueFromTableView<T: UITableViewCell>(_ tableView: UITableView, forIndexPath indexPath: IndexPath) -> T {
+    class func dequeueFromTableView<T: UITableViewCell>(_ tableView: UITableView, forIndexPath indexPath: IndexPath) -> T {
         return tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! T
     }
 }

@@ -30,7 +30,7 @@ class StreamPairTests: XCTestCase {
 
         var resultBuf = Data(repeating: 0, count: 16)
         let readCount = resultBuf.withUnsafeMutableBytes {
-            return istream.read($0, maxLength: resultBuf.count)
+            return istream.read($0, maxLength: 16)
         }
         XCTAssertEqual(readCount, 3)
         XCTAssertEqual(resultBuf[..<readCount], buf)
@@ -84,7 +84,7 @@ class StreamPairTests: XCTestCase {
         while true {
             var buf = Data(repeating: 0, count: 16)
             let readCount = buf.withUnsafeMutableBytes {
-                return istream.read($0, maxLength: buf.count)
+                return istream.read($0, maxLength: 16)
             }
             if readCount == 0 {
                 return result
