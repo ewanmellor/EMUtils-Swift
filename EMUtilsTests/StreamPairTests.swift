@@ -21,16 +21,16 @@ class StreamPairTests: XCTestCase {
         XCTAssertFalse(istream.hasBytesAvailable)
         XCTAssert(ostream.hasSpaceAvailable)
 
-        let buf = Data(bytes: [1, 2, 3])
+        let buf = Data([1, 2, 3])
         let writtenCount = buf.withUnsafeBytes {
-            ostream.write($0, maxLength: buf.count)
+            ostream.write($0.bindMemory(to: UInt8.self).baseAddress!, maxLength: buf.count)
         }
         XCTAssertEqual(writtenCount, 3)
         XCTAssert(istream.hasBytesAvailable)
 
         var resultBuf = Data(repeating: 0, count: 16)
         let readCount = resultBuf.withUnsafeMutableBytes {
-            return istream.read($0, maxLength: 16)
+            return istream.read($0.bindMemory(to: UInt8.self).baseAddress!, maxLength: 16)
         }
         XCTAssertEqual(readCount, 3)
         XCTAssertEqual(resultBuf[..<readCount], buf)
@@ -51,17 +51,17 @@ class StreamPairTests: XCTestCase {
         XCTAssertFalse(istream.hasBytesAvailable)
         XCTAssert(ostream.hasSpaceAvailable)
 
-        var buf = Data(bytes: [1, 2, 3])
+        var buf = Data([1, 2, 3])
         writeBuf(buf, istream, ostream)
-        buf = Data(bytes: [4, 5, 6, 7, 8, 9, 10])
+        buf = Data([4, 5, 6, 7, 8, 9, 10])
         writeBuf(buf, istream, ostream)
-        buf = Data(bytes: [11, 12, 13, 14, 15, 16])
+        buf = Data([11, 12, 13, 14, 15, 16])
         writeBuf(buf, istream, ostream)
-        buf = Data(bytes: [17])
+        buf = Data([17])
         writeBuf(buf, istream, ostream)
-        buf = Data(bytes: [])
+        buf = Data([])
         writeBuf(buf, istream, ostream)
-        buf = Data(bytes: [18, 19, 20])
+        buf = Data([18, 19, 20])
         writeBuf(buf, istream, ostream)
         ostream.close()
 
@@ -69,8 +69,8 @@ class StreamPairTests: XCTestCase {
         XCTAssertEqual(ostream.streamStatus, .closed)
 
         let result = readAll(istream)
-        let expected = Data(bytes: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-                                    11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+        let expected = Data([1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                             11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
         XCTAssertEqual(result, expected)
 
         XCTAssertEqual(istream.streamStatus, .atEnd)
@@ -84,7 +84,7 @@ class StreamPairTests: XCTestCase {
         while true {
             var buf = Data(repeating: 0, count: 16)
             let readCount = buf.withUnsafeMutableBytes {
-                return istream.read($0, maxLength: 16)
+                return istream.read($0.bindMemory(to: UInt8.self).baseAddress!, maxLength: 16)
             }
             if readCount == 0 {
                 return result
@@ -96,7 +96,7 @@ class StreamPairTests: XCTestCase {
 
     private func writeBuf(_ buf: Data, _ istream: InputStream, _ ostream: OutputStream) {
         let writtenCount = buf.withUnsafeBytes {
-            ostream.write($0, maxLength: buf.count)
+            ostream.write($0.bindMemory(to: UInt8.self).baseAddress!, maxLength: buf.count)
         }
         XCTAssertEqual(writtenCount, buf.count)
         XCTAssert(istream.hasBytesAvailable)

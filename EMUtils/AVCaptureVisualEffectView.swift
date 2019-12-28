@@ -12,7 +12,7 @@ import UIKit
 public class AVCaptureVisualEffectView: AVCaptureView {
     private weak var visualEffectView: UIVisualEffectView?
 
-    var effectStyle: UIBlurEffectStyle? {
+    var effectStyle: UIBlurEffect.Style? {
         didSet {
             refresh()
         }

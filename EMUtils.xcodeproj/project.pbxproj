@@ -604,15 +604,15 @@
 					};
 					40BF497B1CC1C77800BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1130;
 					};
 					40BF49851CC1C77900BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1130;
 					};
 					40BF49BE1CC1CE3900BF6D82 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1130;
 					};
 					40C9B9501E636B2700DC9ED8 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1039,7 +1039,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1059,7 +1059,7 @@
 				PRODUCT_NAME = EMUtils;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtils/EMUtils-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1073,7 +1073,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtilsTests/EMUtilsTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1086,7 +1086,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "EMUtilsTests/EMUtilsTests-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1107,7 +1107,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
 				PRODUCT_NAME = EMUtilsTestBase;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1128,7 +1128,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.ewanmellor.EMUtilsTestBase;
 				PRODUCT_NAME = EMUtilsTestBase;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
