@@ -50,6 +50,8 @@
 		407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D198C1CC37E5200C102D5 /* CBLParseDate.c */; };
 		407D198F1CC37E5200C102D5 /* CBLParseDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198D1CC37E5200C102D5 /* CBLParseDate.h */; };
 		407D19911CC3806600C102D5 /* NSDate+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */; };
+		40BBEF4D23B6A924006D8D02 /* URL+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */; };
+		40BBEF5323B6AD0B006D8D02 /* URL+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */; };
 		40BF49871CC1C77900BF6D82 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
 		40BF49991CC1C7F100BF6D82 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49981CC1C7F100BF6D82 /* Reflection.swift */; };
 		40BF49A51CC1CA0B00BF6D82 /* UIView+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49A41CC1CA0B00BF6D82 /* UIView+EMUtils.swift */; };
@@ -64,6 +66,7 @@
 		40C6F1521EDFE25300D64928 /* String+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */; };
 		40C6F1591EDFF90900D64928 /* String+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+EMUtils.swift */; };
 		40CC28EE219F8212007E4B34 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C1FFFC1E63A29300AFF3FD /* AEXML.framework */; };
+		40CD10F123B824F100126F6D /* URL+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD10F023B824F100126F6D /* URL+EMUtilsTests.swift */; };
 		40CF9AEC21E48BA20030544B /* Array+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */; };
 		40CF9AED21E48BA20030544B /* Array+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */; };
 		40EFACBA1FB3996F00AF135B /* InlineTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EFACB91FB3996F00AF135B /* InlineTiming.swift */; };
@@ -196,6 +199,7 @@
 		407D198C1CC37E5200C102D5 /* CBLParseDate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CBLParseDate.c; sourceTree = "<group>"; };
 		407D198D1CC37E5200C102D5 /* CBLParseDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLParseDate.h; sourceTree = "<group>"; };
 		407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EMUtilsTests.swift"; sourceTree = "<group>"; };
+		40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+EMUtils.swift"; sourceTree = "<group>"; };
 		40BF497C1CC1C77800BF6D82 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BF49811CC1C77800BF6D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40BF49861CC1C77900BF6D82 /* EMUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +216,7 @@
 		40C1FFE71E63A29300AFF3FD /* AEXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AEXML.xcodeproj; path = ../AEXML/AEXML.xcodeproj; sourceTree = "<group>"; };
 		40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40C9B9511E636B2700DC9ED8 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40CD10F023B824F100126F6D /* URL+EMUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EMUtils.swift"; sourceTree = "<group>"; };
 		40EFACB91FB3996F00AF135B /* InlineTiming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTiming.swift; sourceTree = "<group>"; };
 		40F8B6101F58C3DA0020F99B /* UUID+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+EMUtilsTests.swift"; sourceTree = "<group>"; };
@@ -364,6 +369,7 @@
 				407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */,
 				4006B8DB1F9803C10083D67B /* StreamPairTests.swift */,
 				40C6F1511EDFE25300D64928 /* String+EMUtilsTests.swift */,
+				40CD10F023B824F100126F6D /* URL+EMUtilsTests.swift */,
 				40F8B6101F58C3DA0020F99B /* UUID+EMUtilsTests.swift */,
 				407D197C1CC23CFC00C102D5 /* Supporting Files */,
 			);
@@ -439,6 +445,7 @@
 				404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */,
 				40F8B6221F59F5EB0020F99B /* Optional+EMUtils.swift */,
 				402BA68F1EB1C01200E35176 /* String+EMUtils.swift */,
+				40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */,
 				402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */,
 			);
 			name = Foundation;
@@ -760,6 +767,7 @@
 				40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */,
 				405AC91A1EC0209B00E7227A /* UIImage+EMUtils.swift in Sources */,
 				407D19881CC2BC2F00C102D5 /* NSDate+ISO8601.m in Sources */,
+				40BBEF4D23B6A924006D8D02 /* URL+EMUtils.swift in Sources */,
 				404769FA1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */,
 				402F6AF61F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */,
 				40F8B6231F59F5EB0020F99B /* Optional+EMUtils.swift in Sources */,
@@ -790,6 +798,7 @@
 				40C6F1521EDFE25300D64928 /* String+EMUtilsTests.swift in Sources */,
 				4020370A1F256911005BC02B /* Dictionary+EMUtilsTests.swift in Sources */,
 				40F8B6111F58C3DA0020F99B /* UUID+EMUtilsTests.swift in Sources */,
+				40CD10F123B824F100126F6D /* URL+EMUtilsTests.swift in Sources */,
 				4006B8DC1F9803C10083D67B /* StreamPairTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -818,6 +827,7 @@
 				4072CB341F8CAC720008BE2B /* NSDate+EMUtils.swift in Sources */,
 				40F8B6241F59F5EB0020F99B /* Optional+EMUtils.swift in Sources */,
 				40C004C61E6AAEB2009CCFBA /* Reflection.swift in Sources */,
+				40BBEF5323B6AD0B006D8D02 /* URL+EMUtils.swift in Sources */,
 				40CF9AED21E48BA20030544B /* Array+EMUtils.swift in Sources */,
 				4072CB361F8CAC8F0008BE2B /* NSDate+ISO8601.m in Sources */,
 				404769FB1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */,
