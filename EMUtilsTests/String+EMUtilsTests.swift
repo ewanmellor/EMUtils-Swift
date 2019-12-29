@@ -12,6 +12,12 @@ import XCTest
 
 
 class String_EMUtilsTests: XCTestCase {
+    func testContainsAny() {
+        XCTAssertFalse("".containsAny(.letters))
+        XCTAssertTrue("ABC".containsAny(.letters))
+        XCTAssertFalse("ABC".containsAny(.decimalDigits))
+    }
+
     func testStringByStrippingQuotesSimple() {
         let input = "Ewan Mellor"
         let expected = "Ewan Mellor"
