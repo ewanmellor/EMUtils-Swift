@@ -50,6 +50,7 @@
 		407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D198C1CC37E5200C102D5 /* CBLParseDate.c */; };
 		407D198F1CC37E5200C102D5 /* CBLParseDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198D1CC37E5200C102D5 /* CBLParseDate.h */; };
 		407D19911CC3806600C102D5 /* NSDate+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */; };
+		40AFDE9423BCA3460065DBEC /* Array+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AFDE9323BCA3460065DBEC /* Array+EMUtilsTests.swift */; };
 		40BBEF4D23B6A924006D8D02 /* URL+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */; };
 		40BBEF5323B6AD0B006D8D02 /* URL+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */; };
 		40BF49871CC1C77900BF6D82 /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF497C1CC1C77800BF6D82 /* EMUtils.framework */; };
@@ -200,6 +201,7 @@
 		407D198C1CC37E5200C102D5 /* CBLParseDate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CBLParseDate.c; sourceTree = "<group>"; };
 		407D198D1CC37E5200C102D5 /* CBLParseDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLParseDate.h; sourceTree = "<group>"; };
 		407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EMUtilsTests.swift"; sourceTree = "<group>"; };
+		40AFDE9323BCA3460065DBEC /* Array+EMUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+EMUtils.swift"; sourceTree = "<group>"; };
 		40BF497C1CC1C77800BF6D82 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BF49811CC1C77800BF6D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 		40BF498A1CC1C77900BF6D82 /* EMUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
+				40AFDE9323BCA3460065DBEC /* Array+EMUtilsTests.swift */,
 				402037091F256911005BC02B /* Dictionary+EMUtilsTests.swift */,
 				407D197A1CC23CE900C102D5 /* EnumerateTests.swift */,
 				407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */,
@@ -798,6 +801,7 @@
 				407D19911CC3806600C102D5 /* NSDate+EMUtilsTests.swift in Sources */,
 				407D197B1CC23CE900C102D5 /* EnumerateTests.swift in Sources */,
 				40C6F1521EDFE25300D64928 /* String+EMUtilsTests.swift in Sources */,
+				40AFDE9423BCA3460065DBEC /* Array+EMUtilsTests.swift in Sources */,
 				4020370A1F256911005BC02B /* Dictionary+EMUtilsTests.swift in Sources */,
 				40F8B6111F58C3DA0020F99B /* UUID+EMUtilsTests.swift in Sources */,
 				40CD10F123B824F100126F6D /* URL+EMUtilsTests.swift in Sources */,
