@@ -9,24 +9,27 @@
 import Foundation
 
 
+fileprivate let placeholder = "PLACEHOLDER"
+
+
 public extension URL {
     static func commonRoot(_ urls: [URL]) -> URL? {
         if urls.isEmpty {
             return nil
         }
         var result = urls[0]
-        for url in urls[1...] {
-            if let r = result.commonRoot(url) {
+        for url in urls {
+            if let r = result.commonRootAndPlaceholder(url) {
                 result = r
             }
             else {
                 return nil
             }
         }
-        return result
+        return result.deletingLastPathComponent()
     }
 
-    func commonRoot(_ other: URL) -> URL? {
+    private func commonRootAndPlaceholder(_ other: URL) -> URL? {
         if other.scheme != scheme || other.host != host {
             return nil
         }
@@ -39,6 +42,10 @@ public extension URL {
             c.append(b == "/" ? "" : b)
             i += 1
         }
+        if c.isEmpty {
+            c.append("")
+        }
+        c.append(placeholder)
         var result = URLComponents()
         result.scheme = scheme
         result.host = scheme == "file" ? "" : host
