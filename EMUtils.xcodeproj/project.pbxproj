@@ -35,7 +35,7 @@
 		4072CB231F8CA8C60008BE2B /* EMJUnitTestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF49B61CC1CC4A00BF6D82 /* EMJUnitTestObserver.swift */; };
 		4072CB2F1F8CAB370008BE2B /* EMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C9B9511E636B2700DC9ED8 /* EMUtils.framework */; };
 		4072CB341F8CAC720008BE2B /* NSDate+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19831CC2BBB100C102D5 /* NSDate+EMUtils.swift */; };
-		4072CB351F8CAC870008BE2B /* NSDate+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D19851CC2BC2F00C102D5 /* NSDate+ISO8601.h */; };
+		4072CB351F8CAC870008BE2B /* NSDate+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D19851CC2BC2F00C102D5 /* NSDate+ISO8601.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4072CB361F8CAC8F0008BE2B /* NSDate+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 407D19861CC2BC2F00C102D5 /* NSDate+ISO8601.m */; };
 		4072CB371F8CACF60008BE2B /* CBLParseDate.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D198C1CC37E5200C102D5 /* CBLParseDate.c */; };
 		4072CB381F8CACFA0008BE2B /* CBLParseDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198D1CC37E5200C102D5 /* CBLParseDate.h */; };
@@ -45,7 +45,7 @@
 		407D197D1CC2B72900C102D5 /* EMUtilsTestBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BF49BF1CC1CE3900BF6D82 /* EMUtilsTestBase.framework */; };
 		407D19811CC2B78C00C102D5 /* EMTestCaseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19801CC2B78C00C102D5 /* EMTestCaseBase.swift */; };
 		407D19841CC2BBB100C102D5 /* NSDate+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19831CC2BBB100C102D5 /* NSDate+EMUtils.swift */; };
-		407D19871CC2BC2F00C102D5 /* NSDate+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D19851CC2BC2F00C102D5 /* NSDate+ISO8601.h */; };
+		407D19871CC2BC2F00C102D5 /* NSDate+ISO8601.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D19851CC2BC2F00C102D5 /* NSDate+ISO8601.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		407D19881CC2BC2F00C102D5 /* NSDate+ISO8601.m in Sources */ = {isa = PBXBuildFile; fileRef = 407D19861CC2BC2F00C102D5 /* NSDate+ISO8601.m */; };
 		407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D198C1CC37E5200C102D5 /* CBLParseDate.c */; };
 		407D198F1CC37E5200C102D5 /* CBLParseDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198D1CC37E5200C102D5 /* CBLParseDate.h */; };
@@ -67,6 +67,7 @@
 		40C6F1591EDFF90900D64928 /* String+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BA68F1EB1C01200E35176 /* String+EMUtils.swift */; };
 		40CC28EE219F8212007E4B34 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C1FFFC1E63A29300AFF3FD /* AEXML.framework */; };
 		40CD10F123B824F100126F6D /* URL+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CD10F023B824F100126F6D /* URL+EMUtilsTests.swift */; };
+		40CD111723B83F3D00126F6D /* EMUtils-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198A1CC2BDA600C102D5 /* EMUtils-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40CF9AEC21E48BA20030544B /* Array+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */; };
 		40CF9AED21E48BA20030544B /* Array+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */; };
 		40EFACBA1FB3996F00AF135B /* InlineTiming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EFACB91FB3996F00AF135B /* InlineTiming.swift */; };
@@ -495,6 +496,7 @@
 				404769ED1FD9DFB2004E157D /* LoggingMacrosWrappers.h in Headers */,
 				404769EC1FD9DFA4004E157D /* LoggingMacros.h in Headers */,
 				4072CB351F8CAC870008BE2B /* NSDate+ISO8601.h in Headers */,
+				40CD111723B83F3D00126F6D /* EMUtils-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
