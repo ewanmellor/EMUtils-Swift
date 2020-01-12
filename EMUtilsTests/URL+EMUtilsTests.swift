@@ -12,6 +12,29 @@ import XCTest
 
 
 class URL_EMUtilsTests: XCTestCase {
+    func testAppendDirectories() {
+        doTestAppendDirectories(expected: "/", "/", [])
+        doTestAppendDirectories(expected: "/foo/bar/baz/", "/foo", ["bar", "baz"])
+    }
+
+    private func doTestAppendDirectories(expected: String, _ basepath: String, _ dirs: [String]) {
+        let eUrl = URL(fileURLWithPath: expected)
+        var baseUrl = URL(fileURLWithPath: basepath)
+        baseUrl.appendDirectories(dirs)
+        XCTAssertEqual(baseUrl.path, eUrl.path)
+    }
+
+    func testAppendFile() {
+        doTestAppendFile(expected: "/foo.pdf", "/", "foo", "pdf")
+    }
+
+    private func doTestAppendFile(expected: String, _ basepath: String, _ basename: String, _ ext: String) {
+        let eUrl = URL(fileURLWithPath: expected)
+        var baseUrl = URL(fileURLWithPath: basepath)
+        baseUrl.appendFile(basename: basename, ext: ext)
+        XCTAssertEqual(baseUrl.path, eUrl.path)
+    }
+
     func testCommonRoot() {
         doTestCommonRoot(expected: nil, [])
         doTestCommonRoot(expected: "http://localhost/", ["http://localhost"])

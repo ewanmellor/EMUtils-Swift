@@ -13,6 +13,17 @@ fileprivate let placeholder = "PLACEHOLDER"
 
 
 public extension URL {
+    mutating func appendDirectories(_ dirs: [String]) {
+        for dir in dirs {
+            appendPathComponent(dir, isDirectory: true)
+        }
+    }
+
+    mutating func appendFile(basename: String, ext: String) {
+        appendPathComponent(basename, isDirectory: false)
+        appendPathExtension(ext)
+    }
+
     static func commonRoot(_ urls: [URL]) -> URL? {
         if urls.isEmpty {
             return nil
