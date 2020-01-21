@@ -18,6 +18,8 @@
 		402F6AF71F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */; };
 		402F6AFF1F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */; };
 		402F6B001F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */; };
+		403CFD3E23D7C60B00A2D2FB /* Thread+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CFD3D23D7C60B00A2D2FB /* Thread+EMUtils.swift */; };
+		403CFD3F23D7C60B00A2D2FB /* Thread+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CFD3D23D7C60B00A2D2FB /* Thread+EMUtils.swift */; };
 		404769EA1FD9DF95004E157D /* LoggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E31FD9DF95004E157D /* LoggingMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		404769EB1FD9DF95004E157D /* LoggingMacrosWrappers.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		404769EC1FD9DFA4004E157D /* LoggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E31FD9DF95004E157D /* LoggingMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -184,6 +186,7 @@
 		402BA68F1EB1C01200E35176 /* String+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EMUtils.swift"; sourceTree = "<group>"; };
 		402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+EMUtils.swift"; sourceTree = "<group>"; };
 		402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+EMUtils.swift"; sourceTree = "<group>"; };
+		403CFD3D23D7C60B00A2D2FB /* Thread+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+EMUtils.swift"; sourceTree = "<group>"; };
 		404769E31FD9DF95004E157D /* LoggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingMacros.h; sourceTree = "<group>"; };
 		404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingMacrosWrappers.h; sourceTree = "<group>"; };
 		404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileHandle+EMUtils.swift"; sourceTree = "<group>"; };
@@ -457,6 +460,7 @@
 				404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */,
 				40F8B6221F59F5EB0020F99B /* Optional+EMUtils.swift */,
 				402BA68F1EB1C01200E35176 /* String+EMUtils.swift */,
+				403CFD3D23D7C60B00A2D2FB /* Thread+EMUtils.swift */,
 				40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */,
 				402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */,
 			);
@@ -796,6 +800,7 @@
 				40CF9AEC21E48BA20030544B /* Array+EMUtils.swift in Sources */,
 				40C004B31E6AAE0E009CCFBA /* UnownedWrapper.swift in Sources */,
 				405AC9551EC067B500E7227A /* UIWindow+EMUtils.swift in Sources */,
+				403CFD3E23D7C60B00A2D2FB /* Thread+EMUtils.swift in Sources */,
 				405BB19A1CCAB0F800736787 /* UITableViewCell+EMUtils.swift in Sources */,
 				405AC90D1EBFFBCF00E7227A /* AVCaptureVisualEffectView.swift in Sources */,
 				40E6DD4A23CA804A00194C45 /* CharacterSet+EMUtils.swift in Sources */,
@@ -849,6 +854,7 @@
 				40CF9AED21E48BA20030544B /* Array+EMUtils.swift in Sources */,
 				4072CB361F8CAC8F0008BE2B /* NSDate+ISO8601.m in Sources */,
 				404769FB1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */,
+				403CFD3F23D7C60B00A2D2FB /* Thread+EMUtils.swift in Sources */,
 				4006B8D41F97FBBF0083D67B /* StreamPair.swift in Sources */,
 				40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */,
 			);
