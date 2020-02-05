@@ -52,6 +52,8 @@
 		407D198E1CC37E5200C102D5 /* CBLParseDate.c in Sources */ = {isa = PBXBuildFile; fileRef = 407D198C1CC37E5200C102D5 /* CBLParseDate.c */; };
 		407D198F1CC37E5200C102D5 /* CBLParseDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 407D198D1CC37E5200C102D5 /* CBLParseDate.h */; };
 		407D19911CC3806600C102D5 /* NSDate+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */; };
+		40AF45D923EB7F2F0085F7C4 /* FileManager+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF45D823EB7F2F0085F7C4 /* FileManager+EMUtils.swift */; };
+		40AF45DA23EB7F2F0085F7C4 /* FileManager+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AF45D823EB7F2F0085F7C4 /* FileManager+EMUtils.swift */; };
 		40AFDE9423BCA3460065DBEC /* Array+EMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AFDE9323BCA3460065DBEC /* Array+EMUtilsTests.swift */; };
 		40BBEF4D23B6A924006D8D02 /* URL+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */; };
 		40BBEF5323B6AD0B006D8D02 /* URL+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */; };
@@ -208,6 +210,7 @@
 		407D198C1CC37E5200C102D5 /* CBLParseDate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CBLParseDate.c; sourceTree = "<group>"; };
 		407D198D1CC37E5200C102D5 /* CBLParseDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLParseDate.h; sourceTree = "<group>"; };
 		407D19901CC3806600C102D5 /* NSDate+EMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+EMUtilsTests.swift"; sourceTree = "<group>"; };
+		40AF45D823EB7F2F0085F7C4 /* FileManager+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+EMUtils.swift"; sourceTree = "<group>"; };
 		40AFDE9323BCA3460065DBEC /* Array+EMUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+EMUtilsTests.swift"; sourceTree = "<group>"; };
 		40BBEF4C23B6A924006D8D02 /* URL+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+EMUtils.swift"; sourceTree = "<group>"; };
 		40BF497C1CC1C77800BF6D82 /* EMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -458,6 +461,7 @@
 				402037011F25674C005BC02B /* Dictionary+EMUtils.swift */,
 				40E6DD5123CA82C600194C45 /* Error+EMUtils.swift */,
 				404769F91FDA1303004E157D /* FileHandle+EMUtils.swift */,
+				40AF45D823EB7F2F0085F7C4 /* FileManager+EMUtils.swift */,
 				40F8B6221F59F5EB0020F99B /* Optional+EMUtils.swift */,
 				402BA68F1EB1C01200E35176 /* String+EMUtils.swift */,
 				403CFD3D23D7C60B00A2D2FB /* Thread+EMUtils.swift */,
@@ -780,6 +784,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				402BA6901EB1C01200E35176 /* String+EMUtils.swift in Sources */,
+				40AF45D923EB7F2F0085F7C4 /* FileManager+EMUtils.swift in Sources */,
 				407D19751CC2322400C102D5 /* Enumerate.swift in Sources */,
 				40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */,
 				405AC91A1EC0209B00E7227A /* UIImage+EMUtils.swift in Sources */,
@@ -838,6 +843,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40E6DD5323CA82C600194C45 /* Error+EMUtils.swift in Sources */,
+				40AF45DA23EB7F2F0085F7C4 /* FileManager+EMUtils.swift in Sources */,
 				40EFACC01FB3997600AF135B /* InlineTiming.swift in Sources */,
 				402F6B001F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */,
 				40C6F1591EDFF90900D64928 /* String+EMUtils.swift in Sources */,
