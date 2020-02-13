@@ -60,6 +60,11 @@ public extension String {
         return (matchRange == wholeRange ? self : substring(with: matchRange)!)
     }
 
+    func suffix(fromIdx: Int) -> Substring {
+        precondition(fromIdx <= count)
+        return suffix(from: index(startIndex, offsetBy: fromIdx))
+    }
+
     func trim() -> String {
        return trimmingCharacters(in: .whitespacesAndNewlines)
     }
