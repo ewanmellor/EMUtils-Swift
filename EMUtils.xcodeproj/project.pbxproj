@@ -18,6 +18,8 @@
 		402F6AF71F58B0F500E96EA9 /* UUID+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */; };
 		402F6AFF1F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */; };
 		402F6B001F58B1F500E96EA9 /* Data+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */; };
+		403A0EF3244C16C000B1358E /* Collection+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A0EF2244C16C000B1358E /* Collection+EMUtils.swift */; };
+		403A0EF4244C16C000B1358E /* Collection+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403A0EF2244C16C000B1358E /* Collection+EMUtils.swift */; };
 		403CFD3E23D7C60B00A2D2FB /* Thread+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CFD3D23D7C60B00A2D2FB /* Thread+EMUtils.swift */; };
 		403CFD3F23D7C60B00A2D2FB /* Thread+EMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CFD3D23D7C60B00A2D2FB /* Thread+EMUtils.swift */; };
 		404769EA1FD9DF95004E157D /* LoggingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 404769E31FD9DF95004E157D /* LoggingMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -188,6 +190,7 @@
 		402BA68F1EB1C01200E35176 /* String+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EMUtils.swift"; sourceTree = "<group>"; };
 		402F6AF51F58B0F500E96EA9 /* UUID+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UUID+EMUtils.swift"; sourceTree = "<group>"; };
 		402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+EMUtils.swift"; sourceTree = "<group>"; };
+		403A0EF2244C16C000B1358E /* Collection+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+EMUtils.swift"; sourceTree = "<group>"; };
 		403CFD3D23D7C60B00A2D2FB /* Thread+EMUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thread+EMUtils.swift"; sourceTree = "<group>"; };
 		404769E31FD9DF95004E157D /* LoggingMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingMacros.h; sourceTree = "<group>"; };
 		404769E91FD9DF95004E157D /* LoggingMacrosWrappers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingMacrosWrappers.h; sourceTree = "<group>"; };
@@ -457,6 +460,7 @@
 			children = (
 				40CF9AEB21E48BA20030544B /* Array+EMUtils.swift */,
 				40E6DD4923CA804A00194C45 /* CharacterSet+EMUtils.swift */,
+				403A0EF2244C16C000B1358E /* Collection+EMUtils.swift */,
 				402F6AFE1F58B1F500E96EA9 /* Data+EMUtils.swift */,
 				402037011F25674C005BC02B /* Dictionary+EMUtils.swift */,
 				40E6DD5123CA82C600194C45 /* Error+EMUtils.swift */,
@@ -786,6 +790,7 @@
 				402BA6901EB1C01200E35176 /* String+EMUtils.swift in Sources */,
 				40AF45D923EB7F2F0085F7C4 /* FileManager+EMUtils.swift in Sources */,
 				407D19751CC2322400C102D5 /* Enumerate.swift in Sources */,
+				403A0EF3244C16C000B1358E /* Collection+EMUtils.swift in Sources */,
 				40C1FFE51E639E7300AFF3FD /* WeakWrapper.swift in Sources */,
 				405AC91A1EC0209B00E7227A /* UIImage+EMUtils.swift in Sources */,
 				407D19881CC2BC2F00C102D5 /* NSDate+ISO8601.m in Sources */,
@@ -861,6 +866,7 @@
 				4072CB361F8CAC8F0008BE2B /* NSDate+ISO8601.m in Sources */,
 				404769FB1FDA1303004E157D /* FileHandle+EMUtils.swift in Sources */,
 				403CFD3F23D7C60B00A2D2FB /* Thread+EMUtils.swift in Sources */,
+				403A0EF4244C16C000B1358E /* Collection+EMUtils.swift in Sources */,
 				4006B8D41F97FBBF0083D67B /* StreamPair.swift in Sources */,
 				40C1FFE61E639E7A00AFF3FD /* WeakWrapper.swift in Sources */,
 			);
